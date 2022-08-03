@@ -82,9 +82,15 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                     .toString()
                     .toLowerCase()
                     .contains(text.toString().toLowerCase()) ||
-                element.name.toLowerCase().contains(text.toString().toLowerCase()) ||
-                element.callingCode.toLowerCase().contains(text.toString().toLowerCase()) ||
-                element.countryCode.toLowerCase().startsWith(text.toString().toLowerCase()))
+                element.name
+                    .toLowerCase()
+                    .contains(text.toString().toLowerCase()) ||
+                element.callingCode
+                    .toLowerCase()
+                    .contains(text.toString().toLowerCase()) ||
+                element.countryCode
+                    .toLowerCase()
+                    .startsWith(text.toString().toLowerCase()))
             .map((e) => e)
             .toList();
       });
@@ -110,10 +116,12 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
     _list = await getCountries(context);
     try {
       String? code = await FlutterSimCountryCode.simCountryCode;
-      _currentCountry = _list.firstWhere((element) => element.countryCode == code);
+      _currentCountry =
+          _list.firstWhere((element) => element.countryCode == code);
       final country = _currentCountry;
       if (country != null) {
-        _list.removeWhere((element) => element.callingCode == country.callingCode);
+        _list.removeWhere(
+            (element) => element.callingCode == country.callingCode);
         _list.insert(0, country);
       }
     } catch (e) {
@@ -154,7 +162,8 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                     borderSide: BorderSide(),
                     borderRadius: BorderRadius.circular(30),
                   ),
-                  contentPadding: EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 8),
+                  contentPadding:
+                      EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 8),
                   hintText: widget.searchHintText,
                 ),
             textInputAction: TextInputAction.done,
@@ -172,14 +181,16 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                   padding: EdgeInsets.only(top: 16),
                   controller: _scrollController,
                   itemCount: _filteredList.length,
-                  separatorBuilder: (_, index) => widget.showSeparator ? Divider() : Container(),
+                  separatorBuilder: (_, index) =>
+                      widget.showSeparator ? Divider() : Container(),
                   itemBuilder: (_, index) {
                     return InkWell(
                       onTap: () {
                         widget.onSelected?.call(_filteredList[index]);
                       },
                       child: Container(
-                        padding: EdgeInsets.only(bottom: 12, top: 12, left: 24, right: 24),
+                        padding: EdgeInsets.only(
+                            bottom: 12, top: 12, left: 24, right: 24),
                         child: Row(
                           children: <Widget>[
                             Image.asset(

@@ -120,11 +120,15 @@ class PhoneNumberUtil {
   /// Returns a [List] of [RegionInfo] of all supported regions.
   /// Optionally pass the [locale] identifier for translating the names.
   Future<List<RegionInfo>> allSupportedRegions({String? locale}) async {
-    final result = await _channel.invokeListMethod<Map>('get_all_supported_regions', {
+    final result =
+        await _channel.invokeListMethod<Map>('get_all_supported_regions', {
       'locale': locale,
     });
 
-    return result?.map((value) => RegionInfo.fromJson(value.cast())).toList(growable: false) ?? [];
+    return result
+            ?.map((value) => RegionInfo.fromJson(value.cast()))
+            .toList(growable: false) ??
+        [];
   }
 
   /// Return the region code for the device's phone number.
