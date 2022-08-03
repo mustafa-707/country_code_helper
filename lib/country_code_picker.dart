@@ -36,6 +36,9 @@ class CountryPickerWidget extends StatefulWidget {
   ///This will change the hint of the search box. Alternatively [searchInputDecoration] can be used to change decoration fully.
   final String searchHintText;
 
+  ///pass the current locale String to translate the countries name.
+  final String locale;
+
   const CountryPickerWidget({
     Key? key,
     this.onSelected,
@@ -46,6 +49,7 @@ class CountryPickerWidget extends StatefulWidget {
     this.flagIconSize = 32,
     this.showSeparator = false,
     this.focusSearchBox = false,
+    required this.locale,
   }) : super(key: key);
 
   @override
@@ -70,15 +74,13 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
       setState(() {
         _filteredList = _list
             .where((element) =>
-                element.name
+                (element.nameTranslations['${widget.locale}'])
+                    .toString()
                     .toLowerCase()
                     .contains(text.toString().toLowerCase()) ||
-                element.callingCode
-                    .toLowerCase()
-                    .contains(text.toString().toLowerCase()) ||
-                element.countryCode
-                    .toLowerCase()
-                    .startsWith(text.toString().toLowerCase()))
+                element.name.toLowerCase().contains(text.toString().toLowerCase()) ||
+                element.callingCode.toLowerCase().contains(text.toString().toLowerCase()) ||
+                element.countryCode.toLowerCase().startsWith(text.toString().toLowerCase()))
             .map((e) => e)
             .toList();
       });
@@ -104,15 +106,14 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
     _list = await getCountries(context);
     try {
       String? code = await FlutterSimCountryCode.simCountryCode;
-      _currentCountry =
-          _list.firstWhere((element) => element.countryCode == code);
+      _currentCountry = _list.firstWhere((element) => element.countryCode == code);
       final country = _currentCountry;
       if (country != null) {
-        _list.removeWhere(
-            (element) => element.callingCode == country.callingCode);
+        _list.removeWhere((element) => element.callingCode == country.callingCode);
         _list.insert(0, country);
       }
-    } catch (e) {} finally {
+    } catch (e) {
+    } finally {
       setState(() {
         _filteredList = _list.map((e) => e).toList();
         _isLoading = false;
@@ -149,8 +150,7 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                     borderSide: BorderSide(),
                     borderRadius: BorderRadius.circular(30),
                   ),
-                  contentPadding:
-                      EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 8),
+                  contentPadding: EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 8),
                   hintText: widget.searchHintText,
                 ),
             textInputAction: TextInputAction.done,
@@ -168,16 +168,14 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                   padding: EdgeInsets.only(top: 16),
                   controller: _scrollController,
                   itemCount: _filteredList.length,
-                  separatorBuilder: (_, index) =>
-                      widget.showSeparator ? Divider() : Container(),
+                  separatorBuilder: (_, index) => widget.showSeparator ? Divider() : Container(),
                   itemBuilder: (_, index) {
                     return InkWell(
                       onTap: () {
                         widget.onSelected?.call(_filteredList[index]);
                       },
                       child: Container(
-                        padding: EdgeInsets.only(
-                            bottom: 12, top: 12, left: 24, right: 24),
+                        padding: EdgeInsets.only(bottom: 12, top: 12, left: 24, right: 24),
                         child: Row(
                           children: <Widget>[
                             Image.asset(
@@ -190,7 +188,7 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                             ),
                             Expanded(
                                 child: Text(
-                              '${_filteredList[index].callingCode} ${_filteredList[index].name}',
+                              '${_filteredList[index].callingCode} ${_filteredList[index].nameTranslations['${widget.locale}']}',
                               style: widget.itemTextStyle,
                             )),
                           ],

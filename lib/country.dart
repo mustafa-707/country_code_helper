@@ -3,8 +3,15 @@ class Country {
   final String flag;
   final String countryCode;
   final String callingCode;
+  final Map<String, String> nameTranslations;
 
-  const Country(this.name, this.flag, this.countryCode, this.callingCode);
+  const Country(
+    this.name,
+    this.flag,
+    this.countryCode,
+    this.callingCode,
+    this.nameTranslations,
+  );
 
   factory Country.fromJson(Map<String, dynamic> json) {
     return new Country(
@@ -12,6 +19,7 @@ class Country {
       json['flag'] as String,
       json['country_code'] as String,
       json['calling_code'] as String,
+      json['nameTranslations'] as Map<String, String>,
     );
   }
 }
