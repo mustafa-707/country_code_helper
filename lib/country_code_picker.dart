@@ -9,7 +9,7 @@ import 'functions.dart';
 const TextStyle _defaultItemTextStyle = const TextStyle(fontSize: 16);
 const TextStyle _defaultSearchInputStyle = const TextStyle(fontSize: 16);
 const String _kDefaultSearchHintText = 'Search country name, code';
-const String countryCodePackageName = 'flutter_country_code';
+const String countryCodePackageName = 'country_calling_code_picker';
 
 class CountryPickerWidget extends StatefulWidget {
   /// This callback will be called on selection of a [Country].

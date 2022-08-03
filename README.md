@@ -5,7 +5,7 @@ Searchable country picker widget ready to use in a dialog, bottom sheet and even
 
 1: Import the plugin using
 ```dart
- import 'package:flutter_country_code/picker.dart';
+ import 'package:country_calling_code_picker/picker.dart';
 ```
 
 2: Initialize your UI using default country.
