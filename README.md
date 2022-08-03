@@ -35,21 +35,20 @@ void _showCountryPicker() async{
 4: support locale by trigger :
 
 ```dart
- locale: Localizations.localeOf(context).languageCode,} //in CountryPickerWidget 
+ locale: Localizations.localeOf(context).languageCode,} //in CountryPickerWidget
  //or
  _selectedCountry.nameTranslations['en'] // it can be jp , ar ..etc
 
-```  
+```
 
-
-5. If you just need the list of countries for making your own custom country picker, you can all getCountries() which returns list of countries.
+5: If you just need the list of countries for making your own custom country picker, you can all getCountries() which returns list of countries.
 
 ```dart
 List<Country> list = await getCountries(context);
 ```
 
-6. If you want to get flag from the country code, you can use below method to get country using the country code.
-Eg. for getting India's flag,
+6: If you want to get flag from the country code, you can use below method to get country using the country code.
+   Eg. for getting India's flag,
 
 ```dart
 Country country = await getCountryByCountryCode(context, 'IN');
