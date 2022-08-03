@@ -3,7 +3,7 @@ class Country {
   final String flag;
   final String countryCode;
   final String callingCode;
-  final Map<String, String> nameTranslations;
+  final Map nameTranslations;
 
   const Country(
     this.name,
@@ -19,7 +19,7 @@ class Country {
       json['flag'] as String,
       json['country_code'] as String,
       json['calling_code'] as String,
-      json['nameTranslations'] as Map<String, String>,
+      json['nameTranslations'] as Map,
     );
   }
 }
