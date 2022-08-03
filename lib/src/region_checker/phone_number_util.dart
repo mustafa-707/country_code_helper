@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_country_code/src/region_checker/phone_number.dart';
 import 'package:flutter_country_code/src/region_checker/region_info.dart';
 
-const _phoneNumberChannel = MethodChannel('com.julienvignali/phone_number');
+const _phoneNumberChannel = MethodChannel('com.example/flutter_country_code');
 
 class PhoneNumberUtil {
   final MethodChannel _channel;
@@ -120,15 +120,11 @@ class PhoneNumberUtil {
   /// Returns a [List] of [RegionInfo] of all supported regions.
   /// Optionally pass the [locale] identifier for translating the names.
   Future<List<RegionInfo>> allSupportedRegions({String? locale}) async {
-    final result =
-        await _channel.invokeListMethod<Map>('get_all_supported_regions', {
+    final result = await _channel.invokeListMethod<Map>('get_all_supported_regions', {
       'locale': locale,
     });
 
-    return result
-            ?.map((value) => RegionInfo.fromJson(value.cast()))
-            .toList(growable: false) ??
-        [];
+    return result?.map((value) => RegionInfo.fromJson(value.cast())).toList(growable: false) ?? [];
   }
 
   /// Return the region code for the device's phone number.

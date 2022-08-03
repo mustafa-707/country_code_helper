@@ -1,4 +1,4 @@
-package com.example.example;
+package com.example.flutter_country_code;
 
 import android.content.Context;
 import android.telephony.TelephonyManager;
@@ -29,7 +29,7 @@ public class PhoneNumberPlugin implements FlutterPlugin, MethodCallHandler {
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
     context = flutterPluginBinding.getApplicationContext();
-    channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "com.julienvignali/phone_number");
+    channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "com.example/flutter_country_code");
     channel.setMethodCallHandler(this);
   }
 

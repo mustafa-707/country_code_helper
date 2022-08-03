@@ -1,4 +1,4 @@
-group 'com.example.example'
+group 'com.example.flutter_country_code'
 version '1.0.3'
 
 buildscript {
