@@ -1,5 +1,6 @@
 library countrycodepicker;
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sim_country_code/flutter_sim_country_code.dart';
 
@@ -82,15 +83,9 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                     .toString()
                     .toLowerCase()
                     .contains(text.toString().toLowerCase()) ||
-                element.name
-                    .toLowerCase()
-                    .contains(text.toString().toLowerCase()) ||
-                element.callingCode
-                    .toLowerCase()
-                    .contains(text.toString().toLowerCase()) ||
-                element.countryCode
-                    .toLowerCase()
-                    .startsWith(text.toString().toLowerCase()))
+                element.name.toLowerCase().contains(text.toString().toLowerCase()) ||
+                element.callingCode.toLowerCase().contains(text.toString().toLowerCase()) ||
+                element.countryCode.toLowerCase().startsWith(text.toString().toLowerCase()))
             .map((e) => e)
             .toList();
       });
@@ -116,12 +111,10 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
     _list = await getCountries(context);
     try {
       String? code = await FlutterSimCountryCode.simCountryCode;
-      _currentCountry =
-          _list.firstWhere((element) => element.countryCode == code);
+      _currentCountry = _list.firstWhere((element) => element.countryCode == code);
       final country = _currentCountry;
       if (country != null) {
-        _list.removeWhere(
-            (element) => element.callingCode == country.callingCode);
+        _list.removeWhere((element) => element.callingCode == country.callingCode);
         _list.insert(0, country);
       }
     } catch (e) {
@@ -142,9 +135,11 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
         ),
         Padding(
           padding: const EdgeInsets.only(left: 24, right: 24),
-          child: TextField(
+          child: TextFormField(
             style: widget.searchInputStyle,
             autofocus: widget.focusSearchBox,
+            maxLines: 1,
+            autocorrect: false,
             decoration: widget.searchInputDecoration ??
                 InputDecoration(
                   suffixIcon: Visibility(
@@ -158,13 +153,65 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                       }),
                     ),
                   ),
-                  border: OutlineInputBorder(
-                    borderSide: BorderSide(),
-                    borderRadius: BorderRadius.circular(30),
+                  contentPadding: EdgeInsets.only(
+                    left: 16,
+                    right: 16,
+                    top: 8,
+                    bottom: 8,
                   ),
-                  contentPadding:
-                      EdgeInsets.only(left: 16, right: 16, top: 8, bottom: 8),
+                  counterText: '',
+                  labelText: widget.searchHintText,
                   hintText: widget.searchHintText,
+                  errorMaxLines: 1,
+                  errorStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
+                        color: Theme.of(context).colorScheme.onError,
+                        height: 0.8,
+                      ),
+                  enabledBorder: const OutlineInputBorder(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(12.0),
+                    ),
+                    borderSide: BorderSide(
+                      width: 2,
+                      color: Color(0xFFCBD0D6),
+                    ),
+                  ),
+                  errorBorder: OutlineInputBorder(
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(12.0),
+                    ),
+                    borderSide: BorderSide(
+                      width: 2,
+                      color: Theme.of(context).colorScheme.onError,
+                    ),
+                  ),
+                  focusedErrorBorder: OutlineInputBorder(
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(12.0),
+                    ),
+                    borderSide: BorderSide(
+                      width: 2,
+                      color: Theme.of(context).colorScheme.onError,
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(12.0),
+                    ),
+                    borderSide: BorderSide(
+                      width: 2,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                  ),
+                  disabledBorder: OutlineInputBorder(
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(12.0),
+                    ),
+                    borderSide: BorderSide(
+                      width: 2,
+                      color: Theme.of(context).colorScheme.secondary,
+                    ),
+                  ),
                 ),
             textInputAction: TextInputAction.done,
             controller: _controller,
@@ -181,16 +228,14 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                   padding: EdgeInsets.only(top: 16),
                   controller: _scrollController,
                   itemCount: _filteredList.length,
-                  separatorBuilder: (_, index) =>
-                      widget.showSeparator ? Divider() : Container(),
+                  separatorBuilder: (_, index) => widget.showSeparator ? Divider() : Container(),
                   itemBuilder: (_, index) {
                     return InkWell(
                       onTap: () {
                         widget.onSelected?.call(_filteredList[index]);
                       },
                       child: Container(
-                        padding: EdgeInsets.only(
-                            bottom: 12, top: 12, left: 24, right: 24),
+                        padding: EdgeInsets.only(bottom: 12, top: 12, left: 24, right: 24),
                         child: Row(
                           children: <Widget>[
                             Image.asset(
@@ -203,8 +248,8 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                             ),
                             Expanded(
                                 child: Text(
-                              '${widget.listWithCodes ? _filteredList[index].callingCode + ' ' : ''}' +
-                                  '${_filteredList[index].nameTranslations['${widget.locale}']}',
+                              '${_filteredList[index].nameTranslations['${widget.locale}']}' +
+                                  '${Unicode.LRM}${widget.listWithCodes ? _filteredList[index].callingCode + ' ' : ''}',
                               style: widget.itemTextStyle,
                             )),
                           ],
