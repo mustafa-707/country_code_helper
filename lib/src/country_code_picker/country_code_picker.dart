@@ -141,7 +141,7 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
         SizedBox(
           height: 16,
         ),
-        Padding(
+        Container(
           padding: const EdgeInsets.only(left: 24, right: 24),
           child: TextFormField(
             style: widget.searchInputStyle,
@@ -160,12 +160,6 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                         _filteredList.addAll(_list);
                       }),
                     ),
-                  ),
-                  contentPadding: EdgeInsets.only(
-                    left: 16,
-                    right: 16,
-                    top: 8,
-                    bottom: 8,
                   ),
                   counterText: '',
                   labelText: widget.searchHintText,
@@ -259,7 +253,7 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                             Expanded(
                                 child: Text(
                               '${_filteredList[index].nameTranslations['${widget.locale}']}' +
-                                  '${Unicode.LRM}${widget.listWithCodes ? _filteredList[index].callingCode + ' ' : ''}',
+                                  ' ${Unicode.LRM}${widget.listWithCodes ? _filteredList[index].callingCode + ' ' : ''}',
                               style: widget.itemTextStyle,
                             )),
                           ],
