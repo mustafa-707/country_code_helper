@@ -53,3 +53,11 @@ List<Country> list = await getCountries(context);
 ```dart
 Country country = await getCountryByCountryCode(context, 'IN');
 ```
+
+7: phone number validation and formating with standerd forms using native sdks for `android and iOS` :
+
+```dart
+ PhoneNumberTools.format(params...);
+ PhoneNumberTools.validate(params...);
+
+```
