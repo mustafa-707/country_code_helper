@@ -250,12 +250,17 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                             SizedBox(
                               width: 16,
                             ),
-                            Expanded(
-                                child: Text(
-                              '${_filteredList[index].nameTranslations['${widget.locale}']}' +
-                                  ' ${Unicode.LRM}${widget.listWithCodes ? _filteredList[index].callingCode + ' ' : ''}',
+                            Text(
+                              '${_filteredList[index].nameTranslations['${widget.locale}']}',
                               style: widget.itemTextStyle,
-                            )),
+                            ),
+                            Spacer(),
+                            Text(
+                              '${Unicode.LRM}${widget.listWithCodes ? _filteredList[index].callingCode + ' ' : ''}',
+                              style: widget.itemTextStyle.copyWith(
+                                color: Color(0xFFCBD0D6),
+                              ),
+                            ),
                           ],
                         ),
                       ),
