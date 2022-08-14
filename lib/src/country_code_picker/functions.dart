@@ -22,15 +22,16 @@ Future<Country> getDefaultCountry(BuildContext context) async {
     if (countryCode == null) {
       return list.first;
     }
-    return list
-        .firstWhere((element) => element.countryCode.toLowerCase() == countryCode.toLowerCase());
+    return list.firstWhere((element) =>
+        element.countryCode.toLowerCase() == countryCode.toLowerCase());
   } catch (e) {
     return list.first;
   }
 }
 
 ///This function returns an country whose [countryCode] matches with the passed one.
-Future<Country?> getCountryByCountryCode(BuildContext context, String countryCode) async {
+Future<Country?> getCountryByCountryCode(
+    BuildContext context, String countryCode) async {
   final list = await getCountries(context);
   return list.firstWhere((element) => element.countryCode == countryCode);
 }
