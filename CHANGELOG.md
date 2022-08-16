@@ -1,4 +1,12 @@
-## v1.0.9
+# logs
+
+## [v1.1.0]
+
+ *`getCountryByCountryCode` now is not `Future`
+ *get country list now is not a `Future`
+ *Fix some design issues
+
+## [v1.0.9]
 
  *Fix an issue with first item on list
 

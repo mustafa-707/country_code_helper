@@ -1,4 +1,4 @@
-[
+const List<Map<String, Object>> countriesData = [
   {
     "country_code": "AF",
     "name": "Afghanistan",
@@ -6587,4 +6587,4 @@
       "ar": "زيمبابوي"
     }
   }
-]
+];

@@ -114,7 +114,7 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
     setState(() {
       _isLoading = true;
     });
-    _list = await getCountries(context);
+    _list = getCountries();
     try {
       String? code = await FlutterSimCountryCode.simCountryCode;
       _currentCountry =
@@ -250,13 +250,18 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                             SizedBox(
                               width: 16,
                             ),
-                            Text(
-                              '${_filteredList[index].nameTranslations['${widget.locale}']}',
-                              style: widget.itemTextStyle,
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width * .5,
+                              child: Text(
+                                '${_filteredList[index].nameTranslations['${widget.locale}']}',
+                                textAlign: TextAlign.start,
+                                style: widget.itemTextStyle,
+                              ),
                             ),
                             Spacer(),
                             Text(
                               '${Unicode.LRM}${widget.listWithCodes ? _filteredList[index].callingCode + ' ' : ''}',
+                              textAlign: TextAlign.end,
                               style: widget.itemTextStyle.copyWith(
                                 color: Color(0xFFCBD0D6),
                               ),

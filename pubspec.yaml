@@ -1,6 +1,6 @@
 name: flutter_country_code
 description: Flexible Country picker for getting Country code and Calling code.
-version: 1.0.9
+version: 1.1.0
 homepage: https://github.com/mustafa-707/flutter_country_code.git
 
 environment:
@@ -22,4 +22,3 @@ flutter:
   uses-material-design: true
   assets:
     - flags/
-    - raw/

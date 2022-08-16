@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> _initCountry() async {
     try {
-      final country = await getDefaultCountry(context);
+      final country = await getDefaultCountry();
       if (mounted) {
         setState(() {
           _selectedCountry = country;
@@ -77,13 +77,16 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'Country name',
-            ),
             Text(
               '${_selectedCountry?.name ?? "no country"}',
+              textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.headline4,
             ),
+            SizedBox(height: 12),
+            Image.asset(
+              _selectedCountry?.flag ?? '',
+              package: countryCodePackageName,
+            )
           ],
         ),
       ),
