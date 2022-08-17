@@ -1,5 +1,9 @@
 # logs
 
+## [v1.1.2]
+
+ *fix placeholder flag typo
+
 ## [v1.1.1]
 
  *`placeholder flag` when send unfounded COuntry Code to `getCountryByCountryCode`

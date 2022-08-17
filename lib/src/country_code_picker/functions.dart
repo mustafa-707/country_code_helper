@@ -29,7 +29,7 @@ Country getCountryByCountryCode(String countryCode) =>
       (element) => element.countryCode == countryCode,
       orElse: () => Country(
         '',
-        'placeholder',
+        'flags/placeholder.png',
         '',
         '',
         {},
