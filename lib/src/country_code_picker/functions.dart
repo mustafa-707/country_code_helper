@@ -25,4 +25,13 @@ Future<Country> getDefaultCountry() async {
 
 ///This function returns an country whose [countryCode] matches with the passed one.
 Country getCountryByCountryCode(String countryCode) =>
-    getCountries().firstWhere((element) => element.countryCode == countryCode);
+    getCountries().firstWhere(
+      (element) => element.countryCode == countryCode,
+      orElse: () => Country(
+        '',
+        'placeholder',
+        '',
+        '',
+        {},
+      ),
+    );

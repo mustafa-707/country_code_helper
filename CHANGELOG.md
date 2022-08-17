@@ -1,5 +1,9 @@
 # logs
 
+## [v1.1.1]
+
+ *`placeholder flag` when send unfounded COuntry Code to `getCountryByCountryCode`
+
 ## [v1.1.0]
 
  *`getCountryByCountryCode` now is not `Future`
