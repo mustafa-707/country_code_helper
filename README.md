@@ -1,6 +1,6 @@
 # flutter_country_code
 
-[![StandWithPalestine](https://raw.githubusercontent.com/TheBSD/StandWithPalestine/main/badges/StandWithPalestine.svg)](https://github.com/TheBSD/StandWithPalestine/blob/main/docs/README.md)[![Pub Package](https://img.shields.io/pub/v/flutter_country_code.svg)](https://pub.dev/packages/flutter_country_code)
+[![StandWithPalestine](https://raw.githubusercontent.com/TheBSD/StandWithPalestine/main/badges/StandWithPalestine.svg)](https://github.com/TheBSD/StandWithPalestine/blob/main/docs/README.md) [![Pub Package](https://img.shields.io/pub/v/flutter_country_code.svg)](https://pub.dev/packages/flutter_country_code)
 
 A Flutter package to handle country codes, country data, and phone number parsing/validation. This package provides easy access to country information, sorting capabilities, and a convenient widget for displaying and selecting countries.
 
