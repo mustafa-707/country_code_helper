@@ -1,63 +1,151 @@
 # flutter_country_code
 
-Searchable country picker service with sim card detect , copied from `https://github.com/dev-naiksan/country-calling-code-picker`
+[![Stand With Palestine](https://raw.githubusercontent.com/TheBSD/StandWithPalestine/main/banner-no-action.svg)](https://thebsd.github.io/StandWithPalestine)
 
-1: Import the plugin using
+[![Pub Package](https://img.shields.io/pub/v/flutter_country_code.svg)](https://pub.dev/packages/flutter_country_code)
 
-```dart
- import 'package:flutter_country_code/picker.dart';
-```
+A Flutter package to handle country codes, country data, and phone number parsing/validation. This package provides easy access to country information, sorting capabilities, and a convenient widget for displaying and selecting countries.
 
-2: trigger the service by default country.
+## Installation
 
-```dart
-  void initCountry() async {
-    final country = await getDefaultCountry(context);
-    setState(() {
-      _selectedCountry = country;
-    });
-  }
-```
+Add `flutter_country_code` to your `pubspec.yaml`:
 
-3: Use widget `CountryPickerWidget` to get the list of the countries.
+## Features
 
-```dart
-void _showCountryPicker() async{
-    final country = await showCountryPickerSheet(context,);
-    if (country != null) {
-      setState(() {
-        _selectedCountry = country;
-      });
-    }
-}
-```
+### Initialization
 
-4: support locale by trigger :
+#### `initCountry`
+
+Fetches the country code based on the SIM card information.
+
+Example:
 
 ```dart
- locale: Localizations.localeOf(context).languageCode,} //in CountryPickerWidget
- //or
- _selectedCountry.nameTranslations['en'] // it can be jp , ar ..etc
-
+Country? initCountry = await CountryCode.initCountry();
+print(initCountry); // Outputs the country information based on the SIM card.
 ```
 
-5: If you just need the list of countries for making your own custom country picker, you can all getCountries() which returns list of countries.
+> Note: fallback is the first country in the list; hence, it can be sorted before selecting the first one as a fallback.
+
+### Country Data
+
+#### `countries`
+
+Fetches all country data and supports sorting based on a preferred list of country codes.
 
 ```dart
-List<Country> list = await getCountries(context);
+Map<String, Country> allCountries = CountryCode.countries();
+print(allCountries); // Outputs a map of all countries with their data.
 ```
 
-6: If you want to get flag from the country code, you can use below method to get country using the country code.
-   Eg. for getting India's flag,
+#### Sorting
+
+Countries can be sorted based on a preferred list of country codes. This ensures specific countries appear first in the list.
 
 ```dart
-Country country = await getCountryByCountryCode(context, 'IN');
+List<String> preferredCountries = ['US', 'CA', 'GB', 'AU'];
+Map<String, Country> sortedCountries = CountryCode.countries(preferredCountries);
+print(sortedCountries); // Outputs a map of countries sorted by the preferred list.
 ```
 
-7: phone number validation and formating with standerd forms using native sdks for `android and iOS` :
+### Accessing Country Data
+
+#### `getCountryByCountryCode`
+
+Retrieves country data using the country code.
 
 ```dart
- PhoneNumberTools.format(params...);
- PhoneNumberTools.validate(params...);
-
+Country? country = CountryCode.getCountryByCountryCode('US');
+print(country); // Outputs the country information for the United States.
 ```
+
+### Regions
+
+Fetches a list of countries based on region.
+
+#### `arabCountries`
+
+```dart
+List<String> arabCountries = CountryCode.arabCountries;
+```
+
+#### `easternEuropeanCountries`
+
+```dart
+List<String> easternEuropeanCountries = CountryCode.easternEuropeanCountries;
+```
+
+#### `westernEuropeanCountries`
+
+```dart
+List<String> westernEuropeanCountries = CountryCode.westernEuropeanCountries;
+```
+
+#### `stanCountries`
+
+```dart
+List<String> stanCountries = CountryCode.stanCountries;
+```
+
+#### `africanCountries`
+
+```dart
+List<String> africanCountries = CountryCode.africanCountries;
+```
+
+### Phone Number Tools
+
+#### Parsing and Validation
+
+Provides tools for parsing and validating phone numbers.
+
+```dart
+ParsedNumber parsedNumber = await PhoneNumberTools.parse('+123456789');
+print(parsedNumber); 
+// Outputs the parsed phone number information :
+// countryCode
+// e164
+// national
+// type
+// international
+// nationalNumber
+// regionCode
+
+bool isValid = PhoneNumberTools.validate('+123456789');
+print(isValid); // Outputs true/false based on whether the phone number is valid.
+```
+
+### Flags and Placeholders
+
+Access to flag images and a placeholder image path.
+
+```dart
+String flagImagePath = 'flags/PS.png'; // Example path to the Palestine flag.
+// package: countryCodePackageName, use this in image widget to show package assets only
+
+String placeholderImagePath = placeholderImgPath;
+print(placeholderImagePath); // Outputs the path to the placeholder image.
+```
+
+### Widget Integration
+
+#### `CountryPickerWidget`
+
+A Flutter widget for displaying and selecting countries, with search functionality supporting Arabic words normalization.
+
+Example usage:
+
+```dart
+CountryPickerWidget(
+  onSelected: (country) => Navigator.of(context).pop(country),
+  searchHintText: 'search...',
+  locale: Localizations.localeOf(context).languageCode,
+  //... more params
+);
+```
+
+## Support
+
+If you find this plugin helpful, consider supporting me:
+
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg)](https://buymeacoffee.com/is10vmust)

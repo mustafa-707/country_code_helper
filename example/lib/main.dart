@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> _initCountry() async {
     try {
-      final country = await getDefaultCountry();
+      final country = await CountryCode.initCountry(CountryCode.arabCountries);
       if (mounted) {
         setState(() {
           _selectedCountry = country;
@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
       context: context,
       isModal: false,
       enableDrag: false,
-      builder: (_) => const CountryCode(),
+      builder: (_) => const CountryCodeWidget(),
     );
     if (country != null && mounted) {
       setState(() {
@@ -80,11 +80,11 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '${_selectedCountry?.name ?? "no country"}',
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
             SizedBox(height: 12),
             Image.asset(
-              _selectedCountry?.flag ?? '',
+              _selectedCountry?.flag ?? placeholderImgPath,
               package: countryCodePackageName,
             )
           ],

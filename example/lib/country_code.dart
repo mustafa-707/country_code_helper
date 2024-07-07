@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_country_code/flutter_country_code.dart';
 
-class CountryCode extends StatefulWidget {
-  const CountryCode({Key? key}) : super(key: key);
+class CountryCodeWidget extends StatefulWidget {
+  const CountryCodeWidget({Key? key}) : super(key: key);
 
   @override
-  State<CountryCode> createState() => _CountryCodeState();
+  State<CountryCodeWidget> createState() => _CountryCodeWidgetState();
 }
 
-class _CountryCodeState extends State<CountryCode> {
+class _CountryCodeWidgetState extends State<CountryCodeWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

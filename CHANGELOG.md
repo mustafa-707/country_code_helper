@@ -1,4 +1,12 @@
-# logs
+# CHANGES
+
+## [v2.0.0]
+
+ *Upgrade to dart 3.0.0
+ *Add sorting to countries
+ *Upgrade `PhoneNumberTools`
+ *Handle arabic words in search
+ *Upgrade Sim Card Plugin
 
 ## [v1.1.2]
 

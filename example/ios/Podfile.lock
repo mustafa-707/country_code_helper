@@ -1,0 +1,35 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_libphonenumber_ios (1.1.4):
+    - Flutter
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.7.9)
+  - PhoneNumberKit/PhoneNumberKitCore (3.7.9)
+  - sim_card_code (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_libphonenumber_ios (from `.symlinks/plugins/flutter_libphonenumber_ios/ios`)
+  - sim_card_code (from `.symlinks/plugins/sim_card_code/ios`)
+
+SPEC REPOS:
+  trunk:
+    - PhoneNumberKit
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_libphonenumber_ios:
+    :path: ".symlinks/plugins/flutter_libphonenumber_ios/ios"
+  sim_card_code:
+    :path: ".symlinks/plugins/sim_card_code/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_libphonenumber_ios: eb22e6f6e97c9604805f00bff961ca397071dfdc
+  PhoneNumberKit: 9c8d546d65c3784721d575a29e712ae8b992fe79
+  sim_card_code: e692069f5bfe68289868632febe50d7b3a8827c8
+
+PODFILE CHECKSUM: 075ddf6b19cdcced44581bd8fbdfb58404a78f8a
+
+COCOAPODS: 1.15.2

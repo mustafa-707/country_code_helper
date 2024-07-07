@@ -1,40 +1,76 @@
-import 'package:phone_number/phone_number.dart';
+import 'dart:convert';
 
-class PhoneNumberTools implements PhoneNumberUtil {
-  PhoneNumberUtil _plugin = PhoneNumberUtil();
-  @override
-  Future<List<RegionInfo>> allSupportedRegions({String? locale}) {
-    return _plugin.allSupportedRegions(locale: locale);
+import 'package:flutter_libphonenumber/flutter_libphonenumber.dart'
+    as FlutterLibPhoneNumber;
+import 'package:phone_numbers_parser/phone_numbers_parser.dart';
+
+ParsedNumber parsedNumberFromJson(String str) =>
+    ParsedNumber.fromJson(json.decode(str));
+
+class ParsedNumber {
+  String countryCode;
+  String e164;
+  String national;
+  String type;
+  String international;
+  String nationalNumber;
+  String regionCode;
+
+  ParsedNumber({
+    required this.countryCode,
+    required this.e164,
+    required this.national,
+    required this.type,
+    required this.international,
+    required this.nationalNumber,
+    required this.regionCode,
+  });
+
+  factory ParsedNumber.fromJson(Map<String, dynamic> json) => ParsedNumber(
+        countryCode: json["country_code"],
+        e164: json["e164"],
+        national: json["national"],
+        type: json["type"],
+        international: json["international"],
+        nationalNumber: json["national_number"],
+        regionCode: json["region_code"],
+      );
+
+  Map<String, dynamic> toJson() => {
+        "country_code": countryCode,
+        "e164": e164,
+        "national": national,
+        "type": type,
+        "international": international,
+        "national_number": nationalNumber,
+        "region_code": regionCode,
+      };
+}
+
+class PhoneNumberTools {
+  Future<ParsedNumber> parse(
+    String phoneNumberString, {
+    String? regionCode,
+  }) async {
+    final parsedNumber = await FlutterLibPhoneNumber.parse(
+      phoneNumberString,
+      region: regionCode,
+    );
+
+    return ParsedNumber.fromJson(parsedNumber);
   }
 
-  @override
-  Future<String> carrierRegionCode() {
-    return _plugin.carrierRegionCode();
-  }
-
-  @override
-  Future<String> format(String phoneNumberString, String regionCode) {
-    return _plugin.format(phoneNumberString, regionCode);
-  }
-
-  @override
-  Future<PhoneNumber> parse(String phoneNumberString, {String? regionCode}) {
-    return _plugin.parse(phoneNumberString, regionCode: regionCode);
-  }
-
-  @override
-  Future<Map<String, PhoneNumber>> parseList(
-    List<String> phoneNumberStrings, {
+  bool validate(
+    String phoneNumberString, {
     String? regionCode,
   }) {
-    return _plugin.parseList(phoneNumberStrings, regionCode: regionCode);
-  }
-
-  @override
-  Future<bool> validate(
-    String phoneNumberString,
-    String regionCode,
-  ) {
-    return _plugin.validate(phoneNumberString, regionCode);
+    final parsedNumber = PhoneNumber.parse(
+      phoneNumberString,
+      callerCountry: IsoCode.values.firstWhere(
+        (e) => e.name.toLowerCase() == regionCode?.toLowerCase(),
+        orElse: null,
+      ),
+    );
+    return parsedNumber.isValid();
   }
 }
