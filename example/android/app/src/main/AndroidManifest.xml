@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_country_code">
+    package="com.example.country_code_helper">
    <application
         android:label="example"
         android:name="${applicationName}"

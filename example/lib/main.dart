@@ -1,7 +1,7 @@
 import 'package:example/bottom_sheet.dart';
 import 'package:example/country_code.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_country_code/flutter_country_code.dart';
+import 'package:country_code_helper/country_code_helper.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'flutter_country_code',
+      title: 'country_code_helper',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'flutter_country_code example'),
+      home: const MyHomePage(title: 'country_code_helper example'),
     );
   }
 }

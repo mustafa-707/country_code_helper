@@ -1,4 +1,4 @@
-package com.example.flutter_country_code
+package com.example.country_code_helper
 
 import io.flutter.embedding.android.FlutterActivity
 

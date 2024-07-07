@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_country_code/flutter_country_code.dart';
+import 'package:country_code_helper/country_code_helper.dart';
 
 class CountryCodeWidget extends StatefulWidget {
   const CountryCodeWidget({Key? key}) : super(key: key);

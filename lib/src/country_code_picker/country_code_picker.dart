@@ -3,14 +3,15 @@ library countrycodepicker;
 import 'package:dartarabic/dartarabic.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_country_code/src/country_code_picker/country_code_helper.dart';
+import 'package:country_code_helper/src/country_code_picker/country_code_helper.dart';
 
 import 'country.dart';
 
 const TextStyle _defaultItemTextStyle = const TextStyle(fontSize: 16);
 const TextStyle _defaultSearchInputStyle = const TextStyle(fontSize: 16);
 const String _kDefaultSearchHintText = 'Search country name, code';
-const String countryCodePackageName = 'flutter_country_code';
+const String countryCodePackageName = 'country_code_helper';
+const String placeholderImgPath = 'flags/placeholder.png';
 
 class CountryPickerWidget extends StatefulWidget {
   /// This callback will be called on selection of a [Country].
