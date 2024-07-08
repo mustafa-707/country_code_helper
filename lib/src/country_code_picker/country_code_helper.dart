@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:sim_card_code/sim_card_code.dart';
 
 import 'country.dart';
@@ -13,7 +11,6 @@ class CountryCode {
       if (preferedCountries != null) {
         _sortedCountries = countries(preferedCountries);
       }
-      log("message : ${_sortedCountries?.values.first.name}");
       final countryCode = await SimCardInfo.simCountryCode;
 
       final mapToUse = _sortedCountries ?? _countriesData;

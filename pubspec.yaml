@@ -1,6 +1,6 @@
 name: country_code_helper
 description: Flexible Country picker for getting Country code and Calling code.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/mustafa-707/country_code_helper.git
 
 environment:
