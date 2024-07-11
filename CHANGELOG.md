@@ -1,5 +1,9 @@
 # CHANGES
 
+## [v0.0.3]
+
+*correct package repo url
+
 ## [v0.0.2]
 
 *Remove Logs
