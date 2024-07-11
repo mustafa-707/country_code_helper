@@ -68,6 +68,7 @@ class CountryCode {
 
   ///This function returns an country whose [countryCode] matches with the passed one.
   static Country? getCountryByCountryCode(String countryCode) =>
+      _sortedCountries?['${countryCode.toUpperCase()}'] ??
       _countriesData['${countryCode.toUpperCase()}'];
 
   static Map<String, Country>? _sortedCountries;
@@ -210,6 +211,7 @@ class CountryCode {
     "ZM", // Zambia
     "ZW", // Zimbabwe
   ];
+
   static const Map<String, Country> _countriesData = {
     "AF": Country(
       countryCode: "AF",

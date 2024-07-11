@@ -8,13 +8,13 @@ ParsedNumber parsedNumberFromJson(String str) =>
     ParsedNumber.fromJson(json.decode(str));
 
 class ParsedNumber {
-  String countryCode;
-  String e164;
-  String national;
-  String type;
-  String international;
-  String nationalNumber;
-  String regionCode;
+  final String countryCode;
+  final String e164;
+  final String national;
+  final String type;
+  final String international;
+  final String nationalNumber;
+  final String regionCode;
 
   ParsedNumber({
     required this.countryCode,
