@@ -4,12 +4,16 @@ import 'country.dart';
 
 class CountryCode {
   /// return the Country code of device sim card , if not found return first country in list
-  static Future<Country> initCountry([
-    List<String>? preferedCountries,
-  ]) async {
+  static Future<Country> initCountry({
+    List<String>? prefered,
+    List<String>? exclude,
+  }) async {
     try {
-      if (preferedCountries != null) {
-        _sortedCountries = countries(preferedCountries);
+      if (prefered != null || exclude != null) {
+        _sortedCountries = countries(
+          exclude: exclude,
+          preferred: prefered,
+        );
       }
       final countryCode = await SimCardInfo.simCountryCode;
 
@@ -35,35 +39,78 @@ class CountryCode {
     }
   }
 
-  static Map<String, Country> countries([List<String>? preferredCountries]) {
-    if (_sortedCountries != null && preferredCountries == null) {
-      // Return cached sorted map if available and no preferredCountries are provided
+  static Map<String, Country> countries({
+    List<String>? preferred,
+    List<String>? exclude,
+  }) {
+    if (_sortedCountries != null && preferred == null && exclude == null) {
+      // Return cached sorted map if available and no preferred or exclude list is provided
       return _sortedCountries!;
     }
 
     // Create a list to hold the sorted entries
-    List<MapEntry<String, Country>> sortedEntries = [];
+    final sortedEntries = <MapEntry<String, Country>>{};
 
-    // Add preferred countries first in the order specified
-    if (preferredCountries != null) {
-      for (var countryCode in preferredCountries) {
-        if (_countriesData.containsKey(countryCode)) {
-          sortedEntries
-              .add(MapEntry(countryCode, _countriesData[countryCode]!));
-        }
-      }
-    }
-
-    // Add remaining countries in their original order
-    for (var entry in _countriesData.entries) {
-      if (!preferredCountries!.contains(entry.key)) {
-        sortedEntries.add(entry);
-      }
+    // If both preferred and exclude are provided
+    if (preferred != null && exclude != null) {
+      _addPreferredAndExcluded(sortedEntries, preferred, exclude);
+    } else if (exclude != null) {
+      _addExcluded(sortedEntries, exclude);
+    } else if (preferred != null) {
+      _addPreferred(sortedEntries, preferred);
+    } else {
+      sortedEntries.addAll(_countriesData.entries);
     }
 
     // Cache the sorted map
     _sortedCountries = Map.fromEntries(sortedEntries);
     return _sortedCountries!;
+  }
+
+  static void _addPreferredAndExcluded(
+      Set<MapEntry<String, Country>> sortedEntries,
+      List<String> preferred,
+      List<String> exclude) {
+    final preferredSet = preferred.toSet();
+    final excludeSet = exclude.toSet();
+
+    for (var countryCode in preferred) {
+      if (excludeSet.contains(countryCode) &&
+          _countriesData.containsKey(countryCode)) {
+        sortedEntries.add(MapEntry(countryCode, _countriesData[countryCode]!));
+      }
+    }
+
+    for (var countryCode in exclude) {
+      if (!preferredSet.contains(countryCode) &&
+          _countriesData.containsKey(countryCode)) {
+        sortedEntries.add(MapEntry(countryCode, _countriesData[countryCode]!));
+      }
+    }
+  }
+
+  static void _addExcluded(
+      Set<MapEntry<String, Country>> sortedEntries, List<String> exclude) {
+    for (var countryCode in exclude) {
+      if (_countriesData.containsKey(countryCode)) {
+        sortedEntries.add(MapEntry(countryCode, _countriesData[countryCode]!));
+      }
+    }
+  }
+
+  static void _addPreferred(
+      Set<MapEntry<String, Country>> sortedEntries, List<String> preferred) {
+    for (var countryCode in preferred) {
+      if (_countriesData.containsKey(countryCode)) {
+        sortedEntries.add(MapEntry(countryCode, _countriesData[countryCode]!));
+      }
+    }
+
+    for (var entry in _countriesData.entries) {
+      if (!preferred.contains(entry.key)) {
+        sortedEntries.add(entry);
+      }
+    }
   }
 
   ///This function returns an country whose [countryCode] matches with the passed one.

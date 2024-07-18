@@ -1,5 +1,9 @@
 # CHANGES
 
+## [v0.1.0]
+
+*add exclude feature
+
 ## [v0.0.3]
 
 *correct package repo url

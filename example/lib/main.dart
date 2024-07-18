@@ -36,7 +36,16 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> _initCountry() async {
     try {
-      final country = await CountryCode.initCountry(CountryCode.arabCountries);
+      final country = await CountryCode.initCountry(
+        exclude: [
+          'SA',
+          'JO',
+        ],
+        prefered: [
+          'JO',
+          'SA',
+        ],
+      );
       if (mounted) {
         setState(() {
           _selectedCountry = country;
