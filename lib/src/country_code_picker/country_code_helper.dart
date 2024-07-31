@@ -264,7 +264,8 @@ class CountryCode {
       countryCode: "AF",
       name: "Afghanistan",
       callingCode: "+93",
-      flag: "flags/af.png",
+      localFlag: "flags/af.png",
+      networkFlag: "https://flagcdn.com/216x162/af.png",
       nameTranslations: {
         "sk": "Afganistan",
         "se": "Afghanistan",
@@ -291,7 +292,8 @@ class CountryCode {
       countryCode: "AX",
       name: "Åland Islands",
       callingCode: "+358",
-      flag: "flags/ax.png",
+      localFlag: "flags/ax.png",
+      networkFlag: "https://flagcdn.com/216x162/ax.png",
       nameTranslations: {
         "sk": "Alandy",
         "se": "Ålánda",
@@ -318,7 +320,8 @@ class CountryCode {
       countryCode: "AL",
       name: "Albania",
       callingCode: "+355",
-      flag: "flags/al.png",
+      localFlag: "flags/al.png",
+      networkFlag: "https://flagcdn.com/216x162/al.png",
       nameTranslations: {
         "sk": "Albánsko",
         "se": "Albánia",
@@ -345,7 +348,8 @@ class CountryCode {
       countryCode: "DZ",
       name: "Algeria",
       callingCode: "+213",
-      flag: "flags/dz.png",
+      localFlag: "flags/dz.png",
+      networkFlag: "https://flagcdn.com/216x162/dz.png",
       nameTranslations: {
         "sk": "Alžírsko",
         "se": "Algeria",
@@ -372,7 +376,8 @@ class CountryCode {
       countryCode: "AS",
       name: "American Samoa",
       callingCode: "+1684",
-      flag: "flags/as.png",
+      localFlag: "flags/as.png",
+      networkFlag: "https://flagcdn.com/216x162/as.png",
       nameTranslations: {
         "sk": "Americká Samoa",
         "se": "Amerihká Samoa",
@@ -399,7 +404,8 @@ class CountryCode {
       countryCode: "AD",
       name: "Andorra",
       callingCode: "+376",
-      flag: "flags/ad.png",
+      localFlag: "flags/ad.png",
+      networkFlag: "https://flagcdn.com/216x162/ad.png",
       nameTranslations: {
         "sk": "Andorra",
         "se": "Andorra",
@@ -426,7 +432,8 @@ class CountryCode {
       countryCode: "AO",
       name: "Angola",
       callingCode: "+244",
-      flag: "flags/ao.png",
+      localFlag: "flags/ao.png",
+      networkFlag: "https://flagcdn.com/216x162/ao.png",
       nameTranslations: {
         "sk": "Angola",
         "se": "Angola",
@@ -453,7 +460,8 @@ class CountryCode {
       countryCode: "AI",
       name: "Anguilla",
       callingCode: "+1264",
-      flag: "flags/ai.png",
+      localFlag: "flags/ai.png",
+      networkFlag: "https://flagcdn.com/216x162/ai.png",
       nameTranslations: {
         "sk": "Anguilla",
         "se": "Anguilla",
@@ -480,7 +488,8 @@ class CountryCode {
       countryCode: "AQ",
       name: "Antarctica",
       callingCode: "+672",
-      flag: "flags/aq.png",
+      localFlag: "flags/aq.png",
+      networkFlag: "https://flagcdn.com/216x162/aq.png",
       nameTranslations: {
         "sk": "Antarktída",
         "se": "Antárktis",
@@ -507,7 +516,8 @@ class CountryCode {
       countryCode: "AG",
       name: "Antigua and Barbuda",
       callingCode: "+1268",
-      flag: "flags/ag.png",
+      localFlag: "flags/ag.png",
+      networkFlag: "https://flagcdn.com/216x162/ag.png",
       nameTranslations: {
         "sk": "Antigua a Barbuda",
         "se": "Antigua ja Barbuda",
@@ -534,7 +544,8 @@ class CountryCode {
       countryCode: "AR",
       name: "Argentina",
       callingCode: "+54",
-      flag: "flags/ar.png",
+      localFlag: "flags/ar.png",
+      networkFlag: "https://flagcdn.com/216x162/ar.png",
       nameTranslations: {
         "sk": "Argentína",
         "se": "Argentina",
@@ -561,7 +572,8 @@ class CountryCode {
       countryCode: "AM",
       name: "Armenia",
       callingCode: "+374",
-      flag: "flags/am.png",
+      localFlag: "flags/am.png",
+      networkFlag: "https://flagcdn.com/216x162/am.png",
       nameTranslations: {
         "sk": "Arménsko",
         "se": "Armenia",
@@ -588,7 +600,8 @@ class CountryCode {
       countryCode: "AW",
       name: "Aruba",
       callingCode: "+297",
-      flag: "flags/aw.png",
+      localFlag: "flags/aw.png",
+      networkFlag: "https://flagcdn.com/216x162/aw.png",
       nameTranslations: {
         "sk": "Aruba",
         "se": "Aruba",
@@ -615,7 +628,8 @@ class CountryCode {
       countryCode: "AU",
       name: "Australia",
       callingCode: "+61",
-      flag: "flags/au.png",
+      localFlag: "flags/au.png",
+      networkFlag: "https://flagcdn.com/216x162/au.png",
       nameTranslations: {
         "sk": "Austrália",
         "se": "Austrália",
@@ -642,7 +656,8 @@ class CountryCode {
       countryCode: "AT",
       name: "Austria",
       callingCode: "+43",
-      flag: "flags/at.png",
+      localFlag: "flags/at.png",
+      networkFlag: "https://flagcdn.com/216x162/at.png",
       nameTranslations: {
         "sk": "Rakúsko",
         "se": "Nuortariika",
@@ -669,7 +684,8 @@ class CountryCode {
       countryCode: "AZ",
       name: "Azerbaijan",
       callingCode: "+994",
-      flag: "flags/az.png",
+      localFlag: "flags/az.png",
+      networkFlag: "https://flagcdn.com/216x162/az.png",
       nameTranslations: {
         "sk": "Azerbajdžan",
         "se": "Aserbaižan",
@@ -696,7 +712,8 @@ class CountryCode {
       countryCode: "BS",
       name: "Bahamas",
       callingCode: "+1242",
-      flag: "flags/bs.png",
+      localFlag: "flags/bs.png",
+      networkFlag: "https://flagcdn.com/216x162/bs.png",
       nameTranslations: {
         "sk": "Bahamy",
         "se": "Bahamas",
@@ -723,7 +740,8 @@ class CountryCode {
       countryCode: "BH",
       name: "Bahrain",
       callingCode: "+973",
-      flag: "flags/bh.png",
+      localFlag: "flags/bh.png",
+      networkFlag: "https://flagcdn.com/216x162/bh.png",
       nameTranslations: {
         "sk": "Bahrajn",
         "se": "Bahrain",
@@ -750,7 +768,8 @@ class CountryCode {
       countryCode: "BD",
       name: "Bangladesh",
       callingCode: "+880",
-      flag: "flags/bd.png",
+      localFlag: "flags/bd.png",
+      networkFlag: "https://flagcdn.com/216x162/bd.png",
       nameTranslations: {
         "sk": "Bangladéš",
         "se": "Bangladesh",
@@ -777,7 +796,8 @@ class CountryCode {
       countryCode: "BB",
       name: "Barbados",
       callingCode: "+1246",
-      flag: "flags/bb.png",
+      localFlag: "flags/bb.png",
+      networkFlag: "https://flagcdn.com/216x162/bb.png",
       nameTranslations: {
         "sk": "Barbados",
         "se": "Barbados",
@@ -804,7 +824,8 @@ class CountryCode {
       countryCode: "BY",
       name: "Belarus",
       callingCode: "+375",
-      flag: "flags/by.png",
+      localFlag: "flags/by.png",
+      networkFlag: "https://flagcdn.com/216x162/by.png",
       nameTranslations: {
         "sk": "Bielorusko",
         "se": "Vilges-Ruošša",
@@ -831,7 +852,8 @@ class CountryCode {
       countryCode: "BE",
       name: "Belgium",
       callingCode: "+32",
-      flag: "flags/be.png",
+      localFlag: "flags/be.png",
+      networkFlag: "https://flagcdn.com/216x162/be.png",
       nameTranslations: {
         "sk": "Belgicko",
         "se": "Belgia",
@@ -858,7 +880,8 @@ class CountryCode {
       countryCode: "BZ",
       name: "Belize",
       callingCode: "+501",
-      flag: "flags/bz.png",
+      localFlag: "flags/bz.png",
+      networkFlag: "https://flagcdn.com/216x162/bz.png",
       nameTranslations: {
         "sk": "Belize",
         "se": "Belize",
@@ -885,7 +908,8 @@ class CountryCode {
       countryCode: "BJ",
       name: "Benin",
       callingCode: "+229",
-      flag: "flags/bj.png",
+      localFlag: "flags/bj.png",
+      networkFlag: "https://flagcdn.com/216x162/bj.png",
       nameTranslations: {
         "sk": "Benin",
         "se": "Benin",
@@ -912,7 +936,8 @@ class CountryCode {
       countryCode: "BM",
       name: "Bermuda",
       callingCode: "+1441",
-      flag: "flags/bm.png",
+      localFlag: "flags/bm.png",
+      networkFlag: "https://flagcdn.com/216x162/bm.png",
       nameTranslations: {
         "sk": "Bermudy",
         "se": "Bermuda",
@@ -939,7 +964,8 @@ class CountryCode {
       countryCode: "BT",
       name: "Bhutan",
       callingCode: "+975",
-      flag: "flags/bt.png",
+      localFlag: "flags/bt.png",
+      networkFlag: "https://flagcdn.com/216x162/bt.png",
       nameTranslations: {
         "sk": "Bhután",
         "se": "Bhutan",
@@ -966,7 +992,8 @@ class CountryCode {
       countryCode: "BO",
       name: "Bolivia (Plurinational State of)",
       callingCode: "+591",
-      flag: "flags/bo.png",
+      localFlag: "flags/bo.png",
+      networkFlag: "https://flagcdn.com/216x162/bo.png",
       nameTranslations: {
         "sk": "Bolívia",
         "se": "Bolivia",
@@ -993,7 +1020,8 @@ class CountryCode {
       countryCode: "BA",
       name: "Bosnia and Herzegovina",
       callingCode: "+387",
-      flag: "flags/ba.png",
+      localFlag: "flags/ba.png",
+      networkFlag: "https://flagcdn.com/216x162/ba.png",
       nameTranslations: {
         "sk": "Bosna a Hercegovina",
         "se": "Bosnia-Hercegovina",
@@ -1020,7 +1048,8 @@ class CountryCode {
       countryCode: "BW",
       name: "Botswana",
       callingCode: "+267",
-      flag: "flags/bw.png",
+      localFlag: "flags/bw.png",
+      networkFlag: "https://flagcdn.com/216x162/bw.png",
       nameTranslations: {
         "sk": "Botswana",
         "se": "Botswana",
@@ -1047,7 +1076,8 @@ class CountryCode {
       countryCode: "BV",
       name: "Bouvet Island",
       callingCode: "+47",
-      flag: "flags/bv.png",
+      localFlag: "flags/bv.png",
+      networkFlag: "https://flagcdn.com/216x162/bv.png",
       nameTranslations: {
         "sk": "Bouvetov ostrov",
         "se": "Bouvet-sullot",
@@ -1074,7 +1104,8 @@ class CountryCode {
       countryCode: "BR",
       name: "Brazil",
       callingCode: "+55",
-      flag: "flags/br.png",
+      localFlag: "flags/br.png",
+      networkFlag: "https://flagcdn.com/216x162/br.png",
       nameTranslations: {
         "sk": "Brazília",
         "se": "Brasil",
@@ -1101,7 +1132,8 @@ class CountryCode {
       countryCode: "IO",
       name: "British Indian Ocean Territory",
       callingCode: "+246",
-      flag: "flags/io.png",
+      localFlag: "flags/io.png",
+      networkFlag: "https://flagcdn.com/216x162/io.png",
       nameTranslations: {
         "sk": "Britské indickooceánske územie",
         "se": "British Indian Ocean Territory",
@@ -1128,7 +1160,8 @@ class CountryCode {
       countryCode: "BN",
       name: "Brunei Darussalam",
       callingCode: "+673",
-      flag: "flags/bn.png",
+      localFlag: "flags/bn.png",
+      networkFlag: "https://flagcdn.com/216x162/bn.png",
       nameTranslations: {
         "sk": "Brunej",
         "se": "Brunei",
@@ -1155,7 +1188,8 @@ class CountryCode {
       countryCode: "BG",
       name: "Bulgaria",
       callingCode: "+359",
-      flag: "flags/bg.png",
+      localFlag: "flags/bg.png",
+      networkFlag: "https://flagcdn.com/216x162/bg.png",
       nameTranslations: {
         "sk": "Bulharsko",
         "se": "Bulgária",
@@ -1182,7 +1216,8 @@ class CountryCode {
       countryCode: "BF",
       name: "Burkina Faso",
       callingCode: "+226",
-      flag: "flags/bf.png",
+      localFlag: "flags/bf.png",
+      networkFlag: "https://flagcdn.com/216x162/bf.png",
       nameTranslations: {
         "sk": "Burkina Faso",
         "se": "Burkina Faso",
@@ -1209,7 +1244,8 @@ class CountryCode {
       countryCode: "BI",
       name: "Burundi",
       callingCode: "+257",
-      flag: "flags/bi.png",
+      localFlag: "flags/bi.png",
+      networkFlag: "https://flagcdn.com/216x162/bi.png",
       nameTranslations: {
         "sk": "Burundi",
         "se": "Burundi",
@@ -1236,7 +1272,8 @@ class CountryCode {
       countryCode: "CV",
       name: "Cabo Verde",
       callingCode: "+238",
-      flag: "flags/cv.png",
+      localFlag: "flags/cv.png",
+      networkFlag: "https://flagcdn.com/216x162/cv.png",
       nameTranslations: {
         "sk": "Kapverdy",
         "se": "Kap Verde",
@@ -1263,7 +1300,8 @@ class CountryCode {
       countryCode: "KH",
       name: "Cambodia",
       callingCode: "+855",
-      flag: "flags/kh.png",
+      localFlag: "flags/kh.png",
+      networkFlag: "https://flagcdn.com/216x162/kh.png",
       nameTranslations: {
         "sk": "Kambodža",
         "se": "Kambodža",
@@ -1290,7 +1328,8 @@ class CountryCode {
       countryCode: "CM",
       name: "Cameroon",
       callingCode: "+237",
-      flag: "flags/cm.png",
+      localFlag: "flags/cm.png",
+      networkFlag: "https://flagcdn.com/216x162/cm.png",
       nameTranslations: {
         "sk": "Kamerun",
         "se": "Kamerun",
@@ -1317,7 +1356,8 @@ class CountryCode {
       countryCode: "CA",
       name: "Canada",
       callingCode: "+1",
-      flag: "flags/ca.png",
+      localFlag: "flags/ca.png",
+      networkFlag: "https://flagcdn.com/216x162/ca.png",
       nameTranslations: {
         "sk": "Kanada",
         "se": "Kanáda",
@@ -1344,7 +1384,8 @@ class CountryCode {
       countryCode: "KY",
       name: "Cayman Islands",
       callingCode: "+1345",
-      flag: "flags/ky.png",
+      localFlag: "flags/ky.png",
+      networkFlag: "https://flagcdn.com/216x162/ky.png",
       nameTranslations: {
         "sk": "Kajmanie ostrovy",
         "se": "Cayman-sullot",
@@ -1371,7 +1412,8 @@ class CountryCode {
       countryCode: "CF",
       name: "Central African Republic",
       callingCode: "+236",
-      flag: "flags/cf.png",
+      localFlag: "flags/cf.png",
+      networkFlag: "https://flagcdn.com/216x162/cf.png",
       nameTranslations: {
         "sk": "Stredoafrická republika",
         "se": "Gaska-Afrihká dásseváldi",
@@ -1398,7 +1440,8 @@ class CountryCode {
       countryCode: "TD",
       name: "Chad",
       callingCode: "+235",
-      flag: "flags/td.png",
+      localFlag: "flags/td.png",
+      networkFlag: "https://flagcdn.com/216x162/td.png",
       nameTranslations: {
         "sk": "Čad",
         "se": "Tčad",
@@ -1425,7 +1468,8 @@ class CountryCode {
       countryCode: "CL",
       name: "Chile",
       callingCode: "+56",
-      flag: "flags/cl.png",
+      localFlag: "flags/cl.png",
+      networkFlag: "https://flagcdn.com/216x162/cl.png",
       nameTranslations: {
         "sk": "Čile",
         "se": "Čiile",
@@ -1452,7 +1496,8 @@ class CountryCode {
       countryCode: "CN",
       name: "China",
       callingCode: "+86",
-      flag: "flags/cn.png",
+      localFlag: "flags/cn.png",
+      networkFlag: "https://flagcdn.com/216x162/cn.png",
       nameTranslations: {
         "sk": "Čína",
         "se": "Kiinná",
@@ -1479,7 +1524,8 @@ class CountryCode {
       countryCode: "CX",
       name: "Christmas Island",
       callingCode: "+61",
-      flag: "flags/cx.png",
+      localFlag: "flags/cx.png",
+      networkFlag: "https://flagcdn.com/216x162/cx.png",
       nameTranslations: {
         "sk": "Vianočný ostrov",
         "se": "Juovllat-sullot",
@@ -1506,7 +1552,8 @@ class CountryCode {
       countryCode: "CC",
       name: "Cocos (Keeling) Islands",
       callingCode: "+61",
-      flag: "flags/cc.png",
+      localFlag: "flags/cc.png",
+      networkFlag: "https://flagcdn.com/216x162/cc.png",
       nameTranslations: {
         "sk": "Kokosové ostrovy",
         "se": "Cocos-sullot",
@@ -1533,7 +1580,8 @@ class CountryCode {
       countryCode: "CO",
       name: "Colombia",
       callingCode: "+57",
-      flag: "flags/co.png",
+      localFlag: "flags/co.png",
+      networkFlag: "https://flagcdn.com/216x162/co.png",
       nameTranslations: {
         "sk": "Kolumbia",
         "se": "Kolombia",
@@ -1560,7 +1608,8 @@ class CountryCode {
       countryCode: "KM",
       name: "Comoros",
       callingCode: "+269",
-      flag: "flags/km.png",
+      localFlag: "flags/km.png",
+      networkFlag: "https://flagcdn.com/216x162/km.png",
       nameTranslations: {
         "sk": "Komory",
         "se": "Komoros",
@@ -1587,7 +1636,8 @@ class CountryCode {
       countryCode: "CG",
       name: "Congo (Republic of the)",
       callingCode: "+242",
-      flag: "flags/cg.png",
+      localFlag: "flags/cg.png",
+      networkFlag: "https://flagcdn.com/216x162/cg.png",
       nameTranslations: {
         "sk": "Konžská republika",
         "se": "Kongo-Brazzaville",
@@ -1614,7 +1664,8 @@ class CountryCode {
       countryCode: "CD",
       name: "Congo (Democratic Republic of the)",
       callingCode: "+243",
-      flag: "flags/cd.png",
+      localFlag: "flags/cd.png",
+      networkFlag: "https://flagcdn.com/216x162/cd.png",
       nameTranslations: {
         "sk": "Konžská demokratická republika",
         "se": "Kongo-Kinshasa",
@@ -1641,7 +1692,8 @@ class CountryCode {
       countryCode: "CK",
       name: "Cook Islands",
       callingCode: "+682",
-      flag: "flags/ck.png",
+      localFlag: "flags/ck.png",
+      networkFlag: "https://flagcdn.com/216x162/ck.png",
       nameTranslations: {
         "sk": "Cookove ostrovy",
         "se": "Cook-sullot",
@@ -1668,7 +1720,8 @@ class CountryCode {
       countryCode: "CR",
       name: "Costa Rica",
       callingCode: "+506",
-      flag: "flags/cr.png",
+      localFlag: "flags/cr.png",
+      networkFlag: "https://flagcdn.com/216x162/cr.png",
       nameTranslations: {
         "sk": "Kostarika",
         "se": "Costa Rica",
@@ -1695,7 +1748,8 @@ class CountryCode {
       countryCode: "CI",
       name: "Côte d'Ivoire",
       callingCode: "+225",
-      flag: "flags/ci.png",
+      localFlag: "flags/ci.png",
+      networkFlag: "https://flagcdn.com/216x162/ci.png",
       nameTranslations: {
         "sk": "Pobrežie Slonoviny",
         "se": "Elfenbenariddu",
@@ -1722,7 +1776,8 @@ class CountryCode {
       countryCode: "HR",
       name: "Croatia",
       callingCode: "+385",
-      flag: "flags/hr.png",
+      localFlag: "flags/hr.png",
+      networkFlag: "https://flagcdn.com/216x162/hr.png",
       nameTranslations: {
         "sk": "Chorvátsko",
         "se": "Kroátia",
@@ -1749,7 +1804,8 @@ class CountryCode {
       countryCode: "CU",
       name: "Cuba",
       callingCode: "+53",
-      flag: "flags/cu.png",
+      localFlag: "flags/cu.png",
+      networkFlag: "https://flagcdn.com/216x162/cu.png",
       nameTranslations: {
         "sk": "Kuba",
         "se": "Kuba",
@@ -1776,7 +1832,8 @@ class CountryCode {
       countryCode: "CY",
       name: "Cyprus",
       callingCode: "+357",
-      flag: "flags/cy.png",
+      localFlag: "flags/cy.png",
+      networkFlag: "https://flagcdn.com/216x162/cy.png",
       nameTranslations: {
         "sk": "Cyprus",
         "se": "Kypros",
@@ -1803,7 +1860,8 @@ class CountryCode {
       countryCode: "CZ",
       name: "Czech Republic",
       callingCode: "+420",
-      flag: "flags/cz.png",
+      localFlag: "flags/cz.png",
+      networkFlag: "https://flagcdn.com/216x162/cz.png",
       nameTranslations: {
         "sk": "Česko",
         "se": "Čeahkka",
@@ -1830,7 +1888,8 @@ class CountryCode {
       countryCode: "DK",
       name: "Denmark",
       callingCode: "+45",
-      flag: "flags/dk.png",
+      localFlag: "flags/dk.png",
+      networkFlag: "https://flagcdn.com/216x162/dk.png",
       nameTranslations: {
         "sk": "Dánsko",
         "se": "Dánmárku",
@@ -1857,7 +1916,8 @@ class CountryCode {
       countryCode: "DJ",
       name: "Djibouti",
       callingCode: "+253",
-      flag: "flags/dj.png",
+      localFlag: "flags/dj.png",
+      networkFlag: "https://flagcdn.com/216x162/dj.png",
       nameTranslations: {
         "sk": "Džibutsko",
         "se": "Djibouti",
@@ -1884,7 +1944,8 @@ class CountryCode {
       countryCode: "DM",
       name: "Dominica",
       callingCode: "+1767",
-      flag: "flags/dm.png",
+      localFlag: "flags/dm.png",
+      networkFlag: "https://flagcdn.com/216x162/dm.png",
       nameTranslations: {
         "sk": "Dominika",
         "se": "Dominica",
@@ -1911,7 +1972,8 @@ class CountryCode {
       countryCode: "DO",
       name: "Dominican Republic",
       callingCode: "+1",
-      flag: "flags/do.png",
+      localFlag: "flags/do.png",
+      networkFlag: "https://flagcdn.com/216x162/do.png",
       nameTranslations: {
         "sk": "Dominikánska republika",
         "se": "Dominikána dásseváldi",
@@ -1938,7 +2000,8 @@ class CountryCode {
       countryCode: "EC",
       name: "Ecuador",
       callingCode: "+593",
-      flag: "flags/ec.png",
+      localFlag: "flags/ec.png",
+      networkFlag: "https://flagcdn.com/216x162/ec.png",
       nameTranslations: {
         "sk": "Ekvádor",
         "se": "Ecuador",
@@ -1965,7 +2028,8 @@ class CountryCode {
       countryCode: "EG",
       name: "Egypt",
       callingCode: "+20",
-      flag: "flags/eg.png",
+      localFlag: "flags/eg.png",
+      networkFlag: "https://flagcdn.com/216x162/eg.png",
       nameTranslations: {
         "sk": "Egypt",
         "se": "Egypt",
@@ -1992,7 +2056,8 @@ class CountryCode {
       countryCode: "SV",
       name: "El Salvador",
       callingCode: "+503",
-      flag: "flags/sv.png",
+      localFlag: "flags/sv.png",
+      networkFlag: "https://flagcdn.com/216x162/sv.png",
       nameTranslations: {
         "sk": "Salvádor",
         "se": "El Salvador",
@@ -2019,7 +2084,8 @@ class CountryCode {
       countryCode: "GQ",
       name: "Equatorial Guinea",
       callingCode: "+240",
-      flag: "flags/gq.png",
+      localFlag: "flags/gq.png",
+      networkFlag: "https://flagcdn.com/216x162/gq.png",
       nameTranslations: {
         "sk": "Rovníková Guinea",
         "se": "Ekvatoriála Guinea",
@@ -2046,7 +2112,8 @@ class CountryCode {
       countryCode: "ER",
       name: "Eritrea",
       callingCode: "+291",
-      flag: "flags/er.png",
+      localFlag: "flags/er.png",
+      networkFlag: "https://flagcdn.com/216x162/er.png",
       nameTranslations: {
         "sk": "Eritrea",
         "se": "Eritrea",
@@ -2073,7 +2140,8 @@ class CountryCode {
       countryCode: "EE",
       name: "Estonia",
       callingCode: "+372",
-      flag: "flags/ee.png",
+      localFlag: "flags/ee.png",
+      networkFlag: "https://flagcdn.com/216x162/ee.png",
       nameTranslations: {
         "sk": "Estónsko",
         "se": "Estlánda",
@@ -2100,7 +2168,8 @@ class CountryCode {
       countryCode: "ET",
       name: "Ethiopia",
       callingCode: "+251",
-      flag: "flags/et.png",
+      localFlag: "flags/et.png",
+      networkFlag: "https://flagcdn.com/216x162/et.png",
       nameTranslations: {
         "sk": "Etiópia",
         "se": "Etiopia",
@@ -2127,7 +2196,8 @@ class CountryCode {
       countryCode: "FK",
       name: "Falkland Islands (Malvinas)",
       callingCode: "+500",
-      flag: "flags/fk.png",
+      localFlag: "flags/fk.png",
+      networkFlag: "https://flagcdn.com/216x162/fk.png",
       nameTranslations: {
         "sk": "Falklandy",
         "se": "Falklandsullot",
@@ -2154,7 +2224,8 @@ class CountryCode {
       countryCode: "FO",
       name: "Faroe Islands",
       callingCode: "+298",
-      flag: "flags/fo.png",
+      localFlag: "flags/fo.png",
+      networkFlag: "https://flagcdn.com/216x162/fo.png",
       nameTranslations: {
         "sk": "Faerské ostrovy",
         "se": "Fearsullot",
@@ -2181,7 +2252,8 @@ class CountryCode {
       countryCode: "FJ",
       name: "Fiji",
       callingCode: "+679",
-      flag: "flags/fj.png",
+      localFlag: "flags/fj.png",
+      networkFlag: "https://flagcdn.com/216x162/fj.png",
       nameTranslations: {
         "sk": "Fidži",
         "se": "Fijisullot",
@@ -2208,7 +2280,8 @@ class CountryCode {
       countryCode: "FI",
       name: "Finland",
       callingCode: "+358",
-      flag: "flags/fi.png",
+      localFlag: "flags/fi.png",
+      networkFlag: "https://flagcdn.com/216x162/fi.png",
       nameTranslations: {
         "sk": "Fínsko",
         "se": "Suopma",
@@ -2235,7 +2308,8 @@ class CountryCode {
       countryCode: "FR",
       name: "France",
       callingCode: "+33",
-      flag: "flags/fr.png",
+      localFlag: "flags/fr.png",
+      networkFlag: "https://flagcdn.com/216x162/fr.png",
       nameTranslations: {
         "sk": "Francúzsko",
         "se": "Frankriika",
@@ -2262,7 +2336,8 @@ class CountryCode {
       countryCode: "GF",
       name: "French Guiana",
       callingCode: "+594",
-      flag: "flags/gf.png",
+      localFlag: "flags/gf.png",
+      networkFlag: "https://flagcdn.com/216x162/gf.png",
       nameTranslations: {
         "sk": "Francúzska Guyana",
         "se": "Frankriikka Guayana",
@@ -2289,7 +2364,8 @@ class CountryCode {
       countryCode: "PF",
       name: "French Polynesia",
       callingCode: "+689",
-      flag: "flags/pf.png",
+      localFlag: "flags/pf.png",
+      networkFlag: "https://flagcdn.com/216x162/pf.png",
       nameTranslations: {
         "sk": "Francúzska Polynézia",
         "se": "Frankriikka Polynesia",
@@ -2316,7 +2392,8 @@ class CountryCode {
       countryCode: "TF",
       name: "French Southern Territories",
       callingCode: "+262",
-      flag: "flags/tf.png",
+      localFlag: "flags/tf.png",
+      networkFlag: "https://flagcdn.com/216x162/tf.png",
       nameTranslations: {
         "sk": "Francúzske južné a antarktické územia",
         "se": "French Southern Territories",
@@ -2343,7 +2420,8 @@ class CountryCode {
       countryCode: "GA",
       name: "Gabon",
       callingCode: "+241",
-      flag: "flags/ga.png",
+      localFlag: "flags/ga.png",
+      networkFlag: "https://flagcdn.com/216x162/ga.png",
       nameTranslations: {
         "sk": "Gabon",
         "se": "Gabon",
@@ -2370,7 +2448,8 @@ class CountryCode {
       countryCode: "GM",
       name: "Gambia",
       callingCode: "+220",
-      flag: "flags/gm.png",
+      localFlag: "flags/gm.png",
+      networkFlag: "https://flagcdn.com/216x162/gm.png",
       nameTranslations: {
         "sk": "Gambia",
         "se": "Gámbia",
@@ -2397,7 +2476,8 @@ class CountryCode {
       countryCode: "GE",
       name: "Georgia",
       callingCode: "+995",
-      flag: "flags/ge.png",
+      localFlag: "flags/ge.png",
+      networkFlag: "https://flagcdn.com/216x162/ge.png",
       nameTranslations: {
         "sk": "Gruzínsko",
         "se": "Georgia",
@@ -2424,7 +2504,8 @@ class CountryCode {
       countryCode: "DE",
       name: "Germany",
       callingCode: "+49",
-      flag: "flags/de.png",
+      localFlag: "flags/de.png",
+      networkFlag: "https://flagcdn.com/216x162/de.png",
       nameTranslations: {
         "sk": "Nemecko",
         "se": "Duiska",
@@ -2451,7 +2532,8 @@ class CountryCode {
       countryCode: "GH",
       name: "Ghana",
       callingCode: "+233",
-      flag: "flags/gh.png",
+      localFlag: "flags/gh.png",
+      networkFlag: "https://flagcdn.com/216x162/gh.png",
       nameTranslations: {
         "sk": "Ghana",
         "se": "Ghana",
@@ -2478,7 +2560,8 @@ class CountryCode {
       countryCode: "GI",
       name: "Gibraltar",
       callingCode: "+350",
-      flag: "flags/gi.png",
+      localFlag: "flags/gi.png",
+      networkFlag: "https://flagcdn.com/216x162/gi.png",
       nameTranslations: {
         "sk": "Gibraltár",
         "se": "Gibraltar",
@@ -2505,7 +2588,8 @@ class CountryCode {
       countryCode: "GR",
       name: "Greece",
       callingCode: "+30",
-      flag: "flags/gr.png",
+      localFlag: "flags/gr.png",
+      networkFlag: "https://flagcdn.com/216x162/gr.png",
       nameTranslations: {
         "sk": "Grécko",
         "se": "Greika",
@@ -2532,7 +2616,8 @@ class CountryCode {
       countryCode: "GL",
       name: "Greenland",
       callingCode: "+299",
-      flag: "flags/gl.png",
+      localFlag: "flags/gl.png",
+      networkFlag: "https://flagcdn.com/216x162/gl.png",
       nameTranslations: {
         "sk": "Grónsko",
         "se": "Kalaallit Nunaat",
@@ -2559,7 +2644,8 @@ class CountryCode {
       countryCode: "GD",
       name: "Grenada",
       callingCode: "+1473",
-      flag: "flags/gd.png",
+      localFlag: "flags/gd.png",
+      networkFlag: "https://flagcdn.com/216x162/gd.png",
       nameTranslations: {
         "sk": "Grenada",
         "se": "Grenada",
@@ -2586,7 +2672,8 @@ class CountryCode {
       countryCode: "GP",
       name: "Guadeloupe",
       callingCode: "+590",
-      flag: "flags/gp.png",
+      localFlag: "flags/gp.png",
+      networkFlag: "https://flagcdn.com/216x162/gp.png",
       nameTranslations: {
         "sk": "Guadeloupe",
         "se": "Guadeloupe",
@@ -2613,7 +2700,8 @@ class CountryCode {
       countryCode: "GU",
       name: "Guam",
       callingCode: "+1671",
-      flag: "flags/gu.png",
+      localFlag: "flags/gu.png",
+      networkFlag: "https://flagcdn.com/216x162/gu.png",
       nameTranslations: {
         "sk": "Guam",
         "se": "Guam",
@@ -2640,7 +2728,8 @@ class CountryCode {
       countryCode: "GT",
       name: "Guatemala",
       callingCode: "+502",
-      flag: "flags/gt.png",
+      localFlag: "flags/gt.png",
+      networkFlag: "https://flagcdn.com/216x162/gt.png",
       nameTranslations: {
         "sk": "Guatemala",
         "se": "Guatemala",
@@ -2667,7 +2756,8 @@ class CountryCode {
       countryCode: "GG",
       name: "Guernsey",
       callingCode: "+44",
-      flag: "flags/gg.png",
+      localFlag: "flags/gg.png",
+      networkFlag: "https://flagcdn.com/216x162/gg.png",
       nameTranslations: {
         "sk": "Guernsey",
         "se": "Guernsey",
@@ -2694,7 +2784,8 @@ class CountryCode {
       countryCode: "GN",
       name: "Guinea",
       callingCode: "+224",
-      flag: "flags/gn.png",
+      localFlag: "flags/gn.png",
+      networkFlag: "https://flagcdn.com/216x162/gn.png",
       nameTranslations: {
         "sk": "Guinea",
         "se": "Guinea",
@@ -2721,7 +2812,8 @@ class CountryCode {
       countryCode: "GW",
       name: "Guinea-Bissau",
       callingCode: "+245",
-      flag: "flags/gw.png",
+      localFlag: "flags/gw.png",
+      networkFlag: "https://flagcdn.com/216x162/gw.png",
       nameTranslations: {
         "sk": "Guinea-Bissau",
         "se": "Guinea-Bissau",
@@ -2748,7 +2840,8 @@ class CountryCode {
       countryCode: "GY",
       name: "Guyana",
       callingCode: "+592",
-      flag: "flags/gy.png",
+      localFlag: "flags/gy.png",
+      networkFlag: "https://flagcdn.com/216x162/gy.png",
       nameTranslations: {
         "sk": "Guyana",
         "se": "Guyana",
@@ -2775,7 +2868,8 @@ class CountryCode {
       countryCode: "HT",
       name: "Haiti",
       callingCode: "+509",
-      flag: "flags/ht.png",
+      localFlag: "flags/ht.png",
+      networkFlag: "https://flagcdn.com/216x162/ht.png",
       nameTranslations: {
         "sk": "Haiti",
         "se": "Haiti",
@@ -2802,7 +2896,8 @@ class CountryCode {
       countryCode: "HM",
       name: "Heard Island and McDonald Islands",
       callingCode: "+0",
-      flag: "flags/hm.png",
+      localFlag: "flags/hm.png",
+      networkFlag: "https://flagcdn.com/216x162/hm.png",
       nameTranslations: {
         "sk": "Heardov ostrov a Macdonaldove ostrovy",
         "se": "Heard- ja McDonald-sullot",
@@ -2829,7 +2924,8 @@ class CountryCode {
       countryCode: "VA",
       name: "Vatican City State",
       callingCode: "+379",
-      flag: "flags/va.png",
+      localFlag: "flags/va.png",
+      networkFlag: "https://flagcdn.com/216x162/va.png",
       nameTranslations: {
         "sk": "Vatikán",
         "se": "Vatikána",
@@ -2856,7 +2952,8 @@ class CountryCode {
       countryCode: "HN",
       name: "Honduras",
       callingCode: "+504",
-      flag: "flags/hn.png",
+      localFlag: "flags/hn.png",
+      networkFlag: "https://flagcdn.com/216x162/hn.png",
       nameTranslations: {
         "sk": "Honduras",
         "se": "Honduras",
@@ -2883,7 +2980,8 @@ class CountryCode {
       countryCode: "HK",
       name: "Hong Kong",
       callingCode: "+852",
-      flag: "flags/hk.png",
+      localFlag: "flags/hk.png",
+      networkFlag: "https://flagcdn.com/216x162/hk.png",
       nameTranslations: {
         "sk": "Hongkong – OAO Číny",
         "se": "Hongkong",
@@ -2910,7 +3008,8 @@ class CountryCode {
       countryCode: "HU",
       name: "Hungary",
       callingCode: "+36",
-      flag: "flags/hu.png",
+      localFlag: "flags/hu.png",
+      networkFlag: "https://flagcdn.com/216x162/hu.png",
       nameTranslations: {
         "sk": "Maďarsko",
         "se": "Ungár",
@@ -2937,7 +3036,8 @@ class CountryCode {
       countryCode: "IS",
       name: "Iceland",
       callingCode: "+354",
-      flag: "flags/is.png",
+      localFlag: "flags/is.png",
+      networkFlag: "https://flagcdn.com/216x162/is.png",
       nameTranslations: {
         "sk": "Island",
         "se": "Islánda",
@@ -2964,7 +3064,8 @@ class CountryCode {
       countryCode: "IN",
       name: "India",
       callingCode: "+91",
-      flag: "flags/in.png",
+      localFlag: "flags/in.png",
+      networkFlag: "https://flagcdn.com/216x162/in.png",
       nameTranslations: {
         "sk": "India",
         "se": "India",
@@ -2991,7 +3092,8 @@ class CountryCode {
       countryCode: "ID",
       name: "Indonesia",
       callingCode: "+62",
-      flag: "flags/id.png",
+      localFlag: "flags/id.png",
+      networkFlag: "https://flagcdn.com/216x162/id.png",
       nameTranslations: {
         "sk": "Indonézia",
         "se": "Indonesia",
@@ -3018,7 +3120,8 @@ class CountryCode {
       countryCode: "IR",
       name: "Iran",
       callingCode: "+98",
-      flag: "flags/ir.png",
+      localFlag: "flags/ir.png",
+      networkFlag: "https://flagcdn.com/216x162/ir.png",
       nameTranslations: {
         "sk": "Irán",
         "se": "Iran",
@@ -3045,7 +3148,8 @@ class CountryCode {
       countryCode: "IQ",
       name: "Iraq",
       callingCode: "+964",
-      flag: "flags/iq.png",
+      localFlag: "flags/iq.png",
+      networkFlag: "https://flagcdn.com/216x162/iq.png",
       nameTranslations: {
         "sk": "Irak",
         "se": "Irak",
@@ -3072,7 +3176,8 @@ class CountryCode {
       countryCode: "IE",
       name: "Ireland",
       callingCode: "+353",
-      flag: "flags/ie.png",
+      localFlag: "flags/ie.png",
+      networkFlag: "https://flagcdn.com/216x162/ie.png",
       nameTranslations: {
         "sk": "Írsko",
         "se": "Irlánda",
@@ -3099,7 +3204,8 @@ class CountryCode {
       countryCode: "IM",
       name: "Isle of Man",
       callingCode: "+44",
-      flag: "flags/im.png",
+      localFlag: "flags/im.png",
+      networkFlag: "https://flagcdn.com/216x162/im.png",
       nameTranslations: {
         "sk": "Ostrov Man",
         "se": "Mann-sullot",
@@ -3126,7 +3232,8 @@ class CountryCode {
       countryCode: "IT",
       name: "Italy",
       callingCode: "+39",
-      flag: "flags/it.png",
+      localFlag: "flags/it.png",
+      networkFlag: "https://flagcdn.com/216x162/it.png",
       nameTranslations: {
         "sk": "Taliansko",
         "se": "Itália",
@@ -3153,7 +3260,8 @@ class CountryCode {
       countryCode: "JM",
       name: "Jamaica",
       callingCode: "+1876",
-      flag: "flags/jm.png",
+      localFlag: "flags/jm.png",
+      networkFlag: "https://flagcdn.com/216x162/jm.png",
       nameTranslations: {
         "sk": "Jamajka",
         "se": "Jamaica",
@@ -3180,7 +3288,8 @@ class CountryCode {
       countryCode: "JP",
       name: "Japan",
       callingCode: "+81",
-      flag: "flags/jp.png",
+      localFlag: "flags/jp.png",
+      networkFlag: "https://flagcdn.com/216x162/jp.png",
       nameTranslations: {
         "sk": "Japonsko",
         "se": "Japána",
@@ -3207,7 +3316,8 @@ class CountryCode {
       countryCode: "JE",
       name: "Jersey",
       callingCode: "+44",
-      flag: "flags/je.png",
+      localFlag: "flags/je.png",
+      networkFlag: "https://flagcdn.com/216x162/je.png",
       nameTranslations: {
         "sk": "Jersey",
         "se": "Jersey",
@@ -3234,7 +3344,8 @@ class CountryCode {
       countryCode: "JO",
       name: "Jordan",
       callingCode: "+962",
-      flag: "flags/jo.png",
+      localFlag: "flags/jo.png",
+      networkFlag: "https://flagcdn.com/216x162/jo.png",
       nameTranslations: {
         "sk": "Jordánsko",
         "se": "Jordánia",
@@ -3261,7 +3372,8 @@ class CountryCode {
       countryCode: "KZ",
       name: "Kazakhstan",
       callingCode: "+7",
-      flag: "flags/kz.png",
+      localFlag: "flags/kz.png",
+      networkFlag: "https://flagcdn.com/216x162/kz.png",
       nameTranslations: {
         "sk": "Kazachstan",
         "se": "Kasakstan",
@@ -3288,7 +3400,8 @@ class CountryCode {
       countryCode: "KE",
       name: "Kenya",
       callingCode: "+254",
-      flag: "flags/ke.png",
+      localFlag: "flags/ke.png",
+      networkFlag: "https://flagcdn.com/216x162/ke.png",
       nameTranslations: {
         "sk": "Keňa",
         "se": "Kenia",
@@ -3315,7 +3428,8 @@ class CountryCode {
       countryCode: "KI",
       name: "Kiribati",
       callingCode: "+686",
-      flag: "flags/ki.png",
+      localFlag: "flags/ki.png",
+      networkFlag: "https://flagcdn.com/216x162/ki.png",
       nameTranslations: {
         "sk": "Kiribati",
         "se": "Kiribati",
@@ -3342,7 +3456,8 @@ class CountryCode {
       countryCode: "KP",
       name: "Korea (Democratic People's Republic of)",
       callingCode: "+850",
-      flag: "flags/kp.png",
+      localFlag: "flags/kp.png",
+      networkFlag: "https://flagcdn.com/216x162/kp.png",
       nameTranslations: {
         "sk": "Severná Kórea",
         "se": "Davvi-Korea",
@@ -3369,7 +3484,8 @@ class CountryCode {
       countryCode: "KR",
       name: "Korea (Republic of)",
       callingCode: "+82",
-      flag: "flags/kr.png",
+      localFlag: "flags/kr.png",
+      networkFlag: "https://flagcdn.com/216x162/kr.png",
       nameTranslations: {
         "sk": "Južná Kórea",
         "se": "Mátta-Korea",
@@ -3396,7 +3512,8 @@ class CountryCode {
       countryCode: "KW",
       name: "Kuwait",
       callingCode: "+965",
-      flag: "flags/kw.png",
+      localFlag: "flags/kw.png",
+      networkFlag: "https://flagcdn.com/216x162/kw.png",
       nameTranslations: {
         "sk": "Kuvajt",
         "se": "Kuwait",
@@ -3423,7 +3540,8 @@ class CountryCode {
       countryCode: "KG",
       name: "Kyrgyzstan",
       callingCode: "+996",
-      flag: "flags/kg.png",
+      localFlag: "flags/kg.png",
+      networkFlag: "https://flagcdn.com/216x162/kg.png",
       nameTranslations: {
         "sk": "Kirgizsko",
         "se": "Kirgisistan",
@@ -3450,7 +3568,8 @@ class CountryCode {
       countryCode: "LA",
       name: "Lao People's Democratic Republic",
       callingCode: "+856",
-      flag: "flags/la.png",
+      localFlag: "flags/la.png",
+      networkFlag: "https://flagcdn.com/216x162/la.png",
       nameTranslations: {
         "sk": "Laos",
         "se": "Laos",
@@ -3477,7 +3596,8 @@ class CountryCode {
       countryCode: "LV",
       name: "Latvia",
       callingCode: "+371",
-      flag: "flags/lv.png",
+      localFlag: "flags/lv.png",
+      networkFlag: "https://flagcdn.com/216x162/lv.png",
       nameTranslations: {
         "sk": "Lotyšsko",
         "se": "Látvia",
@@ -3504,7 +3624,8 @@ class CountryCode {
       countryCode: "LB",
       name: "Lebanon",
       callingCode: "+961",
-      flag: "flags/lb.png",
+      localFlag: "flags/lb.png",
+      networkFlag: "https://flagcdn.com/216x162/lb.png",
       nameTranslations: {
         "sk": "Libanon",
         "se": "Libanon",
@@ -3531,7 +3652,8 @@ class CountryCode {
       countryCode: "LS",
       name: "Lesotho",
       callingCode: "+266",
-      flag: "flags/ls.png",
+      localFlag: "flags/ls.png",
+      networkFlag: "https://flagcdn.com/216x162/ls.png",
       nameTranslations: {
         "sk": "Lesotho",
         "se": "Lesotho",
@@ -3558,7 +3680,8 @@ class CountryCode {
       countryCode: "LR",
       name: "Liberia",
       callingCode: "+231",
-      flag: "flags/lr.png",
+      localFlag: "flags/lr.png",
+      networkFlag: "https://flagcdn.com/216x162/lr.png",
       nameTranslations: {
         "sk": "Libéria",
         "se": "Liberia",
@@ -3585,7 +3708,8 @@ class CountryCode {
       countryCode: "LY",
       name: "Libya",
       callingCode: "+218",
-      flag: "flags/ly.png",
+      localFlag: "flags/ly.png",
+      networkFlag: "https://flagcdn.com/216x162/ly.png",
       nameTranslations: {
         "sk": "Líbya",
         "se": "Libya",
@@ -3612,7 +3736,8 @@ class CountryCode {
       countryCode: "LI",
       name: "Liechtenstein",
       callingCode: "+423",
-      flag: "flags/li.png",
+      localFlag: "flags/li.png",
+      networkFlag: "https://flagcdn.com/216x162/li.png",
       nameTranslations: {
         "sk": "Lichtenštajnsko",
         "se": "Liechtenstein",
@@ -3639,7 +3764,8 @@ class CountryCode {
       countryCode: "LT",
       name: "Lithuania",
       callingCode: "+370",
-      flag: "flags/lt.png",
+      localFlag: "flags/lt.png",
+      networkFlag: "https://flagcdn.com/216x162/lt.png",
       nameTranslations: {
         "sk": "Litva",
         "se": "Lietuva",
@@ -3666,7 +3792,8 @@ class CountryCode {
       countryCode: "LU",
       name: "Luxembourg",
       callingCode: "+352",
-      flag: "flags/lu.png",
+      localFlag: "flags/lu.png",
+      networkFlag: "https://flagcdn.com/216x162/lu.png",
       nameTranslations: {
         "sk": "Luxembursko",
         "se": "Luxembourg",
@@ -3693,7 +3820,8 @@ class CountryCode {
       countryCode: "MO",
       name: "Macao",
       callingCode: "+853",
-      flag: "flags/mo.png",
+      localFlag: "flags/mo.png",
+      networkFlag: "https://flagcdn.com/216x162/mo.png",
       nameTranslations: {
         "sk": "Macao – OAO Číny",
         "se": "Makáo",
@@ -3720,7 +3848,8 @@ class CountryCode {
       countryCode: "MK",
       name: "Macedonia (the former Yugoslav Republic of)",
       callingCode: "+389",
-      flag: "flags/mk.png",
+      localFlag: "flags/mk.png",
+      networkFlag: "https://flagcdn.com/216x162/mk.png",
       nameTranslations: {
         "sk": "Severné Macedónsko",
         "se": "North Macedonia",
@@ -3747,7 +3876,8 @@ class CountryCode {
       countryCode: "MG",
       name: "Madagascar",
       callingCode: "+261",
-      flag: "flags/mg.png",
+      localFlag: "flags/mg.png",
+      networkFlag: "https://flagcdn.com/216x162/mg.png",
       nameTranslations: {
         "sk": "Madagaskar",
         "se": "Madagaskar",
@@ -3774,7 +3904,8 @@ class CountryCode {
       countryCode: "MW",
       name: "Malawi",
       callingCode: "+265",
-      flag: "flags/mw.png",
+      localFlag: "flags/mw.png",
+      networkFlag: "https://flagcdn.com/216x162/mw.png",
       nameTranslations: {
         "sk": "Malawi",
         "se": "Malawi",
@@ -3801,7 +3932,8 @@ class CountryCode {
       countryCode: "MY",
       name: "Malaysia",
       callingCode: "+60",
-      flag: "flags/my.png",
+      localFlag: "flags/my.png",
+      networkFlag: "https://flagcdn.com/216x162/my.png",
       nameTranslations: {
         "sk": "Malajzia",
         "se": "Malesia",
@@ -3828,7 +3960,8 @@ class CountryCode {
       countryCode: "MV",
       name: "Maldives",
       callingCode: "+960",
-      flag: "flags/mv.png",
+      localFlag: "flags/mv.png",
+      networkFlag: "https://flagcdn.com/216x162/mv.png",
       nameTranslations: {
         "sk": "Maldivy",
         "se": "Malediivvat",
@@ -3855,7 +3988,8 @@ class CountryCode {
       countryCode: "ML",
       name: "Mali",
       callingCode: "+223",
-      flag: "flags/ml.png",
+      localFlag: "flags/ml.png",
+      networkFlag: "https://flagcdn.com/216x162/ml.png",
       nameTranslations: {
         "sk": "Mali",
         "se": "Mali",
@@ -3882,7 +4016,8 @@ class CountryCode {
       countryCode: "MT",
       name: "Malta",
       callingCode: "+356",
-      flag: "flags/mt.png",
+      localFlag: "flags/mt.png",
+      networkFlag: "https://flagcdn.com/216x162/mt.png",
       nameTranslations: {
         "sk": "Malta",
         "se": "Málta",
@@ -3909,7 +4044,8 @@ class CountryCode {
       countryCode: "MH",
       name: "Marshall Islands",
       callingCode: "+692",
-      flag: "flags/mh.png",
+      localFlag: "flags/mh.png",
+      networkFlag: "https://flagcdn.com/216x162/mh.png",
       nameTranslations: {
         "sk": "Marshallove ostrovy",
         "se": "Marshallsullot",
@@ -3936,7 +4072,8 @@ class CountryCode {
       countryCode: "MQ",
       name: "Martinique",
       callingCode: "+596",
-      flag: "flags/mq.png",
+      localFlag: "flags/mq.png",
+      networkFlag: "https://flagcdn.com/216x162/mq.png",
       nameTranslations: {
         "sk": "Martinik",
         "se": "Martinique",
@@ -3963,7 +4100,8 @@ class CountryCode {
       countryCode: "MR",
       name: "Mauritania",
       callingCode: "+222",
-      flag: "flags/mr.png",
+      localFlag: "flags/mr.png",
+      networkFlag: "https://flagcdn.com/216x162/mr.png",
       nameTranslations: {
         "sk": "Mauritánia",
         "se": "Mauretánia",
@@ -3990,7 +4128,8 @@ class CountryCode {
       countryCode: "MU",
       name: "Mauritius",
       callingCode: "+230",
-      flag: "flags/mu.png",
+      localFlag: "flags/mu.png",
+      networkFlag: "https://flagcdn.com/216x162/mu.png",
       nameTranslations: {
         "sk": "Maurícius",
         "se": "Mauritius",
@@ -4017,7 +4156,8 @@ class CountryCode {
       countryCode: "YT",
       name: "Mayotte",
       callingCode: "+262",
-      flag: "flags/yt.png",
+      localFlag: "flags/yt.png",
+      networkFlag: "https://flagcdn.com/216x162/yt.png",
       nameTranslations: {
         "sk": "Mayotte",
         "se": "Mayotte",
@@ -4044,7 +4184,8 @@ class CountryCode {
       countryCode: "MX",
       name: "Mexico",
       callingCode: "+52",
-      flag: "flags/mx.png",
+      localFlag: "flags/mx.png",
+      networkFlag: "https://flagcdn.com/216x162/mx.png",
       nameTranslations: {
         "sk": "Mexiko",
         "se": "Meksiko",
@@ -4071,7 +4212,8 @@ class CountryCode {
       countryCode: "FM",
       name: "Micronesia (Federated States of)",
       callingCode: "+691",
-      flag: "flags/fm.png",
+      localFlag: "flags/fm.png",
+      networkFlag: "https://flagcdn.com/216x162/fm.png",
       nameTranslations: {
         "sk": "Mikronézia",
         "se": "Mikronesia",
@@ -4098,7 +4240,8 @@ class CountryCode {
       countryCode: "MD",
       name: "Moldova (Republic of)",
       callingCode: "+373",
-      flag: "flags/md.png",
+      localFlag: "flags/md.png",
+      networkFlag: "https://flagcdn.com/216x162/md.png",
       nameTranslations: {
         "sk": "Moldavsko",
         "se": "Moldávia",
@@ -4125,7 +4268,8 @@ class CountryCode {
       countryCode: "MC",
       name: "Monaco",
       callingCode: "+377",
-      flag: "flags/mc.png",
+      localFlag: "flags/mc.png",
+      networkFlag: "https://flagcdn.com/216x162/mc.png",
       nameTranslations: {
         "sk": "Monako",
         "se": "Monaco",
@@ -4152,7 +4296,8 @@ class CountryCode {
       countryCode: "MN",
       name: "Mongolia",
       callingCode: "+976",
-      flag: "flags/mn.png",
+      localFlag: "flags/mn.png",
+      networkFlag: "https://flagcdn.com/216x162/mn.png",
       nameTranslations: {
         "sk": "Mongolsko",
         "se": "Mongolia",
@@ -4179,7 +4324,8 @@ class CountryCode {
       countryCode: "ME",
       name: "Montenegro",
       callingCode: "+382",
-      flag: "flags/me.png",
+      localFlag: "flags/me.png",
+      networkFlag: "https://flagcdn.com/216x162/me.png",
       nameTranslations: {
         "sk": "Čierna Hora",
         "se": "Montenegro",
@@ -4206,7 +4352,8 @@ class CountryCode {
       countryCode: "MS",
       name: "Montserrat",
       callingCode: "+1664",
-      flag: "flags/ms.png",
+      localFlag: "flags/ms.png",
+      networkFlag: "https://flagcdn.com/216x162/ms.png",
       nameTranslations: {
         "sk": "Montserrat",
         "se": "Montserrat",
@@ -4233,7 +4380,8 @@ class CountryCode {
       countryCode: "MA",
       name: "Morocco",
       callingCode: "+212",
-      flag: "flags/ma.png",
+      localFlag: "flags/ma.png",
+      networkFlag: "https://flagcdn.com/216x162/ma.png",
       nameTranslations: {
         "sk": "Maroko",
         "se": "Marokko",
@@ -4260,7 +4408,8 @@ class CountryCode {
       countryCode: "MZ",
       name: "Mozambique",
       callingCode: "+258",
-      flag: "flags/mz.png",
+      localFlag: "flags/mz.png",
+      networkFlag: "https://flagcdn.com/216x162/mz.png",
       nameTranslations: {
         "sk": "Mozambik",
         "se": "Mosambik",
@@ -4287,7 +4436,8 @@ class CountryCode {
       countryCode: "MM",
       name: "Myanmar",
       callingCode: "+95",
-      flag: "flags/mm.png",
+      localFlag: "flags/mm.png",
+      networkFlag: "https://flagcdn.com/216x162/mm.png",
       nameTranslations: {
         "sk": "Mjanmarsko",
         "se": "Burma",
@@ -4314,7 +4464,8 @@ class CountryCode {
       countryCode: "NA",
       name: "Namibia",
       callingCode: "+264",
-      flag: "flags/na.png",
+      localFlag: "flags/na.png",
+      networkFlag: "https://flagcdn.com/216x162/na.png",
       nameTranslations: {
         "sk": "Namíbia",
         "se": "Namibia",
@@ -4341,7 +4492,8 @@ class CountryCode {
       countryCode: "NR",
       name: "Nauru",
       callingCode: "+674",
-      flag: "flags/nr.png",
+      localFlag: "flags/nr.png",
+      networkFlag: "https://flagcdn.com/216x162/nr.png",
       nameTranslations: {
         "sk": "Nauru",
         "se": "Nauru",
@@ -4368,7 +4520,8 @@ class CountryCode {
       countryCode: "NP",
       name: "Nepal",
       callingCode: "+977",
-      flag: "flags/np.png",
+      localFlag: "flags/np.png",
+      networkFlag: "https://flagcdn.com/216x162/np.png",
       nameTranslations: {
         "sk": "Nepál",
         "se": "Nepal",
@@ -4395,7 +4548,8 @@ class CountryCode {
       countryCode: "NL",
       name: "Netherlands",
       callingCode: "+31",
-      flag: "flags/nl.png",
+      localFlag: "flags/nl.png",
+      networkFlag: "https://flagcdn.com/216x162/nl.png",
       nameTranslations: {
         "sk": "Holandsko",
         "se": "Vuolleeatnamat",
@@ -4422,7 +4576,8 @@ class CountryCode {
       countryCode: "NC",
       name: "New Caledonia",
       callingCode: "+687",
-      flag: "flags/nc.png",
+      localFlag: "flags/nc.png",
+      networkFlag: "https://flagcdn.com/216x162/nc.png",
       nameTranslations: {
         "sk": "Nová Kaledónia",
         "se": "Ođđa-Kaledonia",
@@ -4449,7 +4604,8 @@ class CountryCode {
       countryCode: "NZ",
       name: "New Zealand",
       callingCode: "+64",
-      flag: "flags/nz.png",
+      localFlag: "flags/nz.png",
+      networkFlag: "https://flagcdn.com/216x162/nz.png",
       nameTranslations: {
         "sk": "Nový Zéland",
         "se": "Ođđa-Selánda",
@@ -4476,7 +4632,8 @@ class CountryCode {
       countryCode: "NI",
       name: "Nicaragua",
       callingCode: "+505",
-      flag: "flags/ni.png",
+      localFlag: "flags/ni.png",
+      networkFlag: "https://flagcdn.com/216x162/ni.png",
       nameTranslations: {
         "sk": "Nikaragua",
         "se": "Nicaragua",
@@ -4503,7 +4660,8 @@ class CountryCode {
       countryCode: "NE",
       name: "Niger",
       callingCode: "+227",
-      flag: "flags/ne.png",
+      localFlag: "flags/ne.png",
+      networkFlag: "https://flagcdn.com/216x162/ne.png",
       nameTranslations: {
         "sk": "Niger",
         "se": "Niger",
@@ -4530,7 +4688,8 @@ class CountryCode {
       countryCode: "NG",
       name: "Nigeria",
       callingCode: "+234",
-      flag: "flags/ng.png",
+      localFlag: "flags/ng.png",
+      networkFlag: "https://flagcdn.com/216x162/ng.png",
       nameTranslations: {
         "sk": "Nigéria",
         "se": "Nigeria",
@@ -4557,7 +4716,8 @@ class CountryCode {
       countryCode: "NU",
       name: "Niue",
       callingCode: "+683",
-      flag: "flags/nu.png",
+      localFlag: "flags/nu.png",
+      networkFlag: "https://flagcdn.com/216x162/nu.png",
       nameTranslations: {
         "sk": "Niue",
         "se": "Niue",
@@ -4584,7 +4744,8 @@ class CountryCode {
       countryCode: "NF",
       name: "Norfolk Island",
       callingCode: "+672",
-      flag: "flags/nf.png",
+      localFlag: "flags/nf.png",
+      networkFlag: "https://flagcdn.com/216x162/nf.png",
       nameTranslations: {
         "sk": "Norfolk",
         "se": "Norfolksullot",
@@ -4611,7 +4772,8 @@ class CountryCode {
       countryCode: "MP",
       name: "Northern Mariana Islands",
       callingCode: "+1670",
-      flag: "flags/mp.png",
+      localFlag: "flags/mp.png",
+      networkFlag: "https://flagcdn.com/216x162/mp.png",
       nameTranslations: {
         "sk": "Severné Mariány",
         "se": "Davvi-Mariánat",
@@ -4638,7 +4800,8 @@ class CountryCode {
       countryCode: "NO",
       name: "Norway",
       callingCode: "+47",
-      flag: "flags/no.png",
+      localFlag: "flags/no.png",
+      networkFlag: "https://flagcdn.com/216x162/no.png",
       nameTranslations: {
         "sk": "Nórsko",
         "se": "Norga",
@@ -4665,7 +4828,8 @@ class CountryCode {
       countryCode: "OM",
       name: "Oman",
       callingCode: "+968",
-      flag: "flags/om.png",
+      localFlag: "flags/om.png",
+      networkFlag: "https://flagcdn.com/216x162/om.png",
       nameTranslations: {
         "sk": "Omán",
         "se": "Oman",
@@ -4692,7 +4856,8 @@ class CountryCode {
       countryCode: "PK",
       name: "Pakistan",
       callingCode: "+92",
-      flag: "flags/pk.png",
+      localFlag: "flags/pk.png",
+      networkFlag: "https://flagcdn.com/216x162/pk.png",
       nameTranslations: {
         "sk": "Pakistan",
         "se": "Pakistan",
@@ -4719,7 +4884,8 @@ class CountryCode {
       countryCode: "PW",
       name: "Palau",
       callingCode: "+680",
-      flag: "flags/pw.png",
+      localFlag: "flags/pw.png",
+      networkFlag: "https://flagcdn.com/216x162/pw.png",
       nameTranslations: {
         "sk": "Palau",
         "se": "Palau",
@@ -4746,7 +4912,8 @@ class CountryCode {
       countryCode: "PS",
       name: "Palestine, State of",
       callingCode: "+970",
-      flag: "flags/ps.png",
+      localFlag: "flags/ps.png",
+      networkFlag: "https://flagcdn.com/216x162/ps.png",
       nameTranslations: {
         "sk": "Palestínske územia",
         "se": "Palestina",
@@ -4773,7 +4940,8 @@ class CountryCode {
       countryCode: "PA",
       name: "Panama",
       callingCode: "+507",
-      flag: "flags/pa.png",
+      localFlag: "flags/pa.png",
+      networkFlag: "https://flagcdn.com/216x162/pa.png",
       nameTranslations: {
         "sk": "Panama",
         "se": "Panama",
@@ -4800,7 +4968,8 @@ class CountryCode {
       countryCode: "PG",
       name: "Papua New Guinea",
       callingCode: "+675",
-      flag: "flags/pg.png",
+      localFlag: "flags/pg.png",
+      networkFlag: "https://flagcdn.com/216x162/pg.png",
       nameTranslations: {
         "sk": "Papua-Nová Guinea",
         "se": "Papua-Ođđa-Guinea",
@@ -4827,7 +4996,8 @@ class CountryCode {
       countryCode: "PY",
       name: "Paraguay",
       callingCode: "+595",
-      flag: "flags/py.png",
+      localFlag: "flags/py.png",
+      networkFlag: "https://flagcdn.com/216x162/py.png",
       nameTranslations: {
         "sk": "Paraguaj",
         "se": "Paraguay",
@@ -4854,7 +5024,8 @@ class CountryCode {
       countryCode: "PE",
       name: "Peru",
       callingCode: "+51",
-      flag: "flags/pe.png",
+      localFlag: "flags/pe.png",
+      networkFlag: "https://flagcdn.com/216x162/pe.png",
       nameTranslations: {
         "sk": "Peru",
         "se": "Peru",
@@ -4881,7 +5052,8 @@ class CountryCode {
       countryCode: "PH",
       name: "Philippines",
       callingCode: "+63",
-      flag: "flags/ph.png",
+      localFlag: "flags/ph.png",
+      networkFlag: "https://flagcdn.com/216x162/ph.png",
       nameTranslations: {
         "sk": "Filipíny",
         "se": "Filippiinnat",
@@ -4908,7 +5080,8 @@ class CountryCode {
       countryCode: "PN",
       name: "Pitcairn",
       callingCode: "+64",
-      flag: "flags/pn.png",
+      localFlag: "flags/pn.png",
+      networkFlag: "https://flagcdn.com/216x162/pn.png",
       nameTranslations: {
         "sk": "Pitcairnove ostrovy",
         "se": "Pitcairn",
@@ -4935,7 +5108,8 @@ class CountryCode {
       countryCode: "PL",
       name: "Poland",
       callingCode: "+48",
-      flag: "flags/pl.png",
+      localFlag: "flags/pl.png",
+      networkFlag: "https://flagcdn.com/216x162/pl.png",
       nameTranslations: {
         "sk": "Poľsko",
         "se": "Polen",
@@ -4962,7 +5136,8 @@ class CountryCode {
       countryCode: "PT",
       name: "Portugal",
       callingCode: "+351",
-      flag: "flags/pt.png",
+      localFlag: "flags/pt.png",
+      networkFlag: "https://flagcdn.com/216x162/pt.png",
       nameTranslations: {
         "sk": "Portugalsko",
         "se": "Portugála",
@@ -4989,7 +5164,8 @@ class CountryCode {
       countryCode: "PR",
       name: "Puerto Rico",
       callingCode: "+1939",
-      flag: "flags/pr.png",
+      localFlag: "flags/pr.png",
+      networkFlag: "https://flagcdn.com/216x162/pr.png",
       nameTranslations: {
         "sk": "Portoriko",
         "se": "Puerto Rico",
@@ -5016,7 +5192,8 @@ class CountryCode {
       countryCode: "QA",
       name: "Qatar",
       callingCode: "+974",
-      flag: "flags/qa.png",
+      localFlag: "flags/qa.png",
+      networkFlag: "https://flagcdn.com/216x162/qa.png",
       nameTranslations: {
         "sk": "Katar",
         "se": "Qatar",
@@ -5043,7 +5220,8 @@ class CountryCode {
       countryCode: "RE",
       name: "Réunion",
       callingCode: "+262",
-      flag: "flags/re.png",
+      localFlag: "flags/re.png",
+      networkFlag: "https://flagcdn.com/216x162/re.png",
       nameTranslations: {
         "sk": "Réunion",
         "se": "Réunion",
@@ -5070,7 +5248,8 @@ class CountryCode {
       countryCode: "RO",
       name: "Romania",
       callingCode: "+40",
-      flag: "flags/ro.png",
+      localFlag: "flags/ro.png",
+      networkFlag: "https://flagcdn.com/216x162/ro.png",
       nameTranslations: {
         "sk": "Rumunsko",
         "se": "Románia",
@@ -5097,7 +5276,8 @@ class CountryCode {
       countryCode: "RU",
       name: "Russian Federation",
       callingCode: "+7",
-      flag: "flags/ru.png",
+      localFlag: "flags/ru.png",
+      networkFlag: "https://flagcdn.com/216x162/ru.png",
       nameTranslations: {
         "sk": "Rusko",
         "se": "Ruošša",
@@ -5124,7 +5304,8 @@ class CountryCode {
       countryCode: "RW",
       name: "Rwanda",
       callingCode: "+250",
-      flag: "flags/rw.png",
+      localFlag: "flags/rw.png",
+      networkFlag: "https://flagcdn.com/216x162/rw.png",
       nameTranslations: {
         "sk": "Rwanda",
         "se": "Rwanda",
@@ -5151,7 +5332,8 @@ class CountryCode {
       countryCode: "BL",
       name: "Saint Barthélemy",
       callingCode: "+590",
-      flag: "flags/bl.png",
+      localFlag: "flags/bl.png",
+      networkFlag: "https://flagcdn.com/216x162/bl.png",
       nameTranslations: {
         "sk": "Svätý Bartolomej",
         "se": "Saint Barthélemy",
@@ -5178,7 +5360,8 @@ class CountryCode {
       countryCode: "SH",
       name: "Saint Helena, Ascension and Tristan da Cunha",
       callingCode: "+290",
-      flag: "flags/sh.png",
+      localFlag: "flags/sh.png",
+      networkFlag: "https://flagcdn.com/216x162/sh.png",
       nameTranslations: {
         "sk": "Svätá Helena",
         "se": "Saint Helena",
@@ -5205,7 +5388,8 @@ class CountryCode {
       countryCode: "KN",
       name: "Saint Kitts and Nevis",
       callingCode: "+1869",
-      flag: "flags/kn.png",
+      localFlag: "flags/kn.png",
+      networkFlag: "https://flagcdn.com/216x162/kn.png",
       nameTranslations: {
         "sk": "Svätý Krištof a Nevis",
         "se": "Saint Kitts ja Nevis",
@@ -5232,7 +5416,8 @@ class CountryCode {
       countryCode: "LC",
       name: "Saint Lucia",
       callingCode: "+1758",
-      flag: "flags/lc.png",
+      localFlag: "flags/lc.png",
+      networkFlag: "https://flagcdn.com/216x162/lc.png",
       nameTranslations: {
         "sk": "Svätá Lucia",
         "se": "Saint Lucia",
@@ -5259,7 +5444,8 @@ class CountryCode {
       countryCode: "MF",
       name: "Saint Martin (French part)",
       callingCode: "+590",
-      flag: "flags/mf.png",
+      localFlag: "flags/mf.png",
+      networkFlag: "https://flagcdn.com/216x162/mf.png",
       nameTranslations: {
         "sk": "Svätý Martin (fr.)",
         "se": "Frankriikka Saint Martin",
@@ -5286,7 +5472,8 @@ class CountryCode {
       countryCode: "PM",
       name: "Saint Pierre and Miquelon",
       callingCode: "+508",
-      flag: "flags/pm.png",
+      localFlag: "flags/pm.png",
+      networkFlag: "https://flagcdn.com/216x162/pm.png",
       nameTranslations: {
         "sk": "Saint Pierre a Miquelon",
         "se": "Saint Pierre ja Miquelon",
@@ -5313,7 +5500,8 @@ class CountryCode {
       countryCode: "VC",
       name: "Saint Vincent and the Grenadines",
       callingCode: "+1784",
-      flag: "flags/vc.png",
+      localFlag: "flags/vc.png",
+      networkFlag: "https://flagcdn.com/216x162/vc.png",
       nameTranslations: {
         "sk": "Svätý Vincent a Grenadíny",
         "se": "Saint Vincent ja Grenadine",
@@ -5340,7 +5528,8 @@ class CountryCode {
       countryCode: "WS",
       name: "Samoa",
       callingCode: "+685",
-      flag: "flags/ws.png",
+      localFlag: "flags/ws.png",
+      networkFlag: "https://flagcdn.com/216x162/ws.png",
       nameTranslations: {
         "sk": "Samoa",
         "se": "Samoa",
@@ -5367,7 +5556,8 @@ class CountryCode {
       countryCode: "SM",
       name: "San Marino",
       callingCode: "+378",
-      flag: "flags/sm.png",
+      localFlag: "flags/sm.png",
+      networkFlag: "https://flagcdn.com/216x162/sm.png",
       nameTranslations: {
         "sk": "San Maríno",
         "se": "San Marino",
@@ -5394,7 +5584,8 @@ class CountryCode {
       countryCode: "ST",
       name: "Sao Tome and Principe",
       callingCode: "+239",
-      flag: "flags/st.png",
+      localFlag: "flags/st.png",
+      networkFlag: "https://flagcdn.com/216x162/st.png",
       nameTranslations: {
         "sk": "Svätý Tomáš a Princov ostrov",
         "se": "São Tomé ja Príncipe",
@@ -5421,7 +5612,8 @@ class CountryCode {
       countryCode: "SA",
       name: "Saudi Arabia",
       callingCode: "+966",
-      flag: "flags/sa.png",
+      localFlag: "flags/sa.png",
+      networkFlag: "https://flagcdn.com/216x162/sa.png",
       nameTranslations: {
         "sk": "Saudská Arábia",
         "se": "Saudi-Arábia",
@@ -5448,7 +5640,8 @@ class CountryCode {
       countryCode: "SN",
       name: "Senegal",
       callingCode: "+221",
-      flag: "flags/sn.png",
+      localFlag: "flags/sn.png",
+      networkFlag: "https://flagcdn.com/216x162/sn.png",
       nameTranslations: {
         "sk": "Senegal",
         "se": "Senegal",
@@ -5475,7 +5668,8 @@ class CountryCode {
       countryCode: "RS",
       name: "Serbia",
       callingCode: "+381",
-      flag: "flags/rs.png",
+      localFlag: "flags/rs.png",
+      networkFlag: "https://flagcdn.com/216x162/rs.png",
       nameTranslations: {
         "sk": "Srbsko",
         "se": "Serbia",
@@ -5502,7 +5696,8 @@ class CountryCode {
       countryCode: "SC",
       name: "Seychelles",
       callingCode: "+248",
-      flag: "flags/sc.png",
+      localFlag: "flags/sc.png",
+      networkFlag: "https://flagcdn.com/216x162/sc.png",
       nameTranslations: {
         "sk": "Seychely",
         "se": "Seychellsullot",
@@ -5529,7 +5724,8 @@ class CountryCode {
       countryCode: "SL",
       name: "Sierra Leone",
       callingCode: "+232",
-      flag: "flags/sl.png",
+      localFlag: "flags/sl.png",
+      networkFlag: "https://flagcdn.com/216x162/sl.png",
       nameTranslations: {
         "sk": "Sierra Leone",
         "se": "Sierra Leone",
@@ -5556,7 +5752,8 @@ class CountryCode {
       countryCode: "SG",
       name: "Singapore",
       callingCode: "+65",
-      flag: "flags/sg.png",
+      localFlag: "flags/sg.png",
+      networkFlag: "https://flagcdn.com/216x162/sg.png",
       nameTranslations: {
         "sk": "Singapur",
         "se": "Singapore",
@@ -5583,7 +5780,8 @@ class CountryCode {
       countryCode: "SK",
       name: "Slovakia",
       callingCode: "+421",
-      flag: "flags/sk.png",
+      localFlag: "flags/sk.png",
+      networkFlag: "https://flagcdn.com/216x162/sk.png",
       nameTranslations: {
         "sk": "Slovensko",
         "se": "Slovákia",
@@ -5610,7 +5808,8 @@ class CountryCode {
       countryCode: "SI",
       name: "Slovenia",
       callingCode: "+386",
-      flag: "flags/si.png",
+      localFlag: "flags/si.png",
+      networkFlag: "https://flagcdn.com/216x162/si.png",
       nameTranslations: {
         "sk": "Slovinsko",
         "se": "Slovenia",
@@ -5637,7 +5836,8 @@ class CountryCode {
       countryCode: "SB",
       name: "Solomon Islands",
       callingCode: "+677",
-      flag: "flags/sb.png",
+      localFlag: "flags/sb.png",
+      networkFlag: "https://flagcdn.com/216x162/sb.png",
       nameTranslations: {
         "sk": "Šalamúnove ostrovy",
         "se": "Salomon-sullot",
@@ -5664,7 +5864,8 @@ class CountryCode {
       countryCode: "SO",
       name: "Somalia",
       callingCode: "+252",
-      flag: "flags/so.png",
+      localFlag: "flags/so.png",
+      networkFlag: "https://flagcdn.com/216x162/so.png",
       nameTranslations: {
         "sk": "Somálsko",
         "se": "Somália",
@@ -5691,7 +5892,8 @@ class CountryCode {
       countryCode: "ZA",
       name: "South Africa",
       callingCode: "+27",
-      flag: "flags/za.png",
+      localFlag: "flags/za.png",
+      networkFlag: "https://flagcdn.com/216x162/za.png",
       nameTranslations: {
         "sk": "Južná Afrika",
         "se": "Mátta-Afrihká",
@@ -5718,7 +5920,8 @@ class CountryCode {
       countryCode: "GS",
       name: "South Georgia and the South Sandwich Islands",
       callingCode: "+500",
-      flag: "flags/gs.png",
+      localFlag: "flags/gs.png",
+      networkFlag: "https://flagcdn.com/216x162/gs.png",
       nameTranslations: {
         "sk": "Južná Georgia a Južné Sandwichove ostrovy",
         "se": "Lulli Georgia ja Lulli Sandwich-sullot",
@@ -5745,7 +5948,8 @@ class CountryCode {
       countryCode: "SS",
       name: "South Sudan",
       callingCode: "+211",
-      flag: "flags/ss.png",
+      localFlag: "flags/ss.png",
+      networkFlag: "https://flagcdn.com/216x162/ss.png",
       nameTranslations: {
         "sk": "Južný Sudán",
         "se": "Máttasudan",
@@ -5772,7 +5976,8 @@ class CountryCode {
       countryCode: "ES",
       name: "Spain",
       callingCode: "+34",
-      flag: "flags/es.png",
+      localFlag: "flags/es.png",
+      networkFlag: "https://flagcdn.com/216x162/es.png",
       nameTranslations: {
         "sk": "Španielsko",
         "se": "Spánia",
@@ -5799,7 +6004,8 @@ class CountryCode {
       countryCode: "LK",
       name: "Sri Lanka",
       callingCode: "+94",
-      flag: "flags/lk.png",
+      localFlag: "flags/lk.png",
+      networkFlag: "https://flagcdn.com/216x162/lk.png",
       nameTranslations: {
         "sk": "Srí Lanka",
         "se": "Sri Lanka",
@@ -5826,7 +6032,8 @@ class CountryCode {
       countryCode: "SD",
       name: "Sudan",
       callingCode: "+249",
-      flag: "flags/sd.png",
+      localFlag: "flags/sd.png",
+      networkFlag: "https://flagcdn.com/216x162/sd.png",
       nameTranslations: {
         "sk": "Sudán",
         "se": "Davvisudan",
@@ -5853,7 +6060,8 @@ class CountryCode {
       countryCode: "SR",
       name: "Suriname",
       callingCode: "+597",
-      flag: "flags/sr.png",
+      localFlag: "flags/sr.png",
+      networkFlag: "https://flagcdn.com/216x162/sr.png",
       nameTranslations: {
         "sk": "Surinam",
         "se": "Surinam",
@@ -5880,7 +6088,8 @@ class CountryCode {
       countryCode: "SJ",
       name: "Svalbard and Jan Mayen",
       callingCode: "+47",
-      flag: "flags/sj.png",
+      localFlag: "flags/sj.png",
+      networkFlag: "https://flagcdn.com/216x162/sj.png",
       nameTranslations: {
         "sk": "Svalbard a Jan Mayen",
         "se": "Svalbárda ja Jan Mayen",
@@ -5907,7 +6116,8 @@ class CountryCode {
       countryCode: "SZ",
       name: "Swaziland",
       callingCode: "+268",
-      flag: "flags/sz.png",
+      localFlag: "flags/sz.png",
+      networkFlag: "https://flagcdn.com/216x162/sz.png",
       nameTranslations: {
         "sk": "Eswatini",
         "se": "Svazieana",
@@ -5934,7 +6144,8 @@ class CountryCode {
       countryCode: "SE",
       name: "Sweden",
       callingCode: "+46",
-      flag: "flags/se.png",
+      localFlag: "flags/se.png",
+      networkFlag: "https://flagcdn.com/216x162/se.png",
       nameTranslations: {
         "sk": "Švédsko",
         "se": "Ruoŧŧa",
@@ -5961,7 +6172,8 @@ class CountryCode {
       countryCode: "CH",
       name: "Switzerland",
       callingCode: "+41",
-      flag: "flags/ch.png",
+      localFlag: "flags/ch.png",
+      networkFlag: "https://flagcdn.com/216x162/ch.png",
       nameTranslations: {
         "sk": "Švajčiarsko",
         "se": "Šveica",
@@ -5988,7 +6200,8 @@ class CountryCode {
       countryCode: "SY",
       name: "Syrian Arab Republic",
       callingCode: "+963",
-      flag: "flags/sy.png",
+      localFlag: "flags/sy.png",
+      networkFlag: "https://flagcdn.com/216x162/sy.png",
       nameTranslations: {
         "sk": "Sýria",
         "se": "Syria",
@@ -6015,7 +6228,8 @@ class CountryCode {
       countryCode: "TW",
       name: "Taiwan",
       callingCode: "+886",
-      flag: "flags/tw.png",
+      localFlag: "flags/tw.png",
+      networkFlag: "https://flagcdn.com/216x162/tw.png",
       nameTranslations: {
         "sk": "Taiwan",
         "se": "Taiwan",
@@ -6042,7 +6256,8 @@ class CountryCode {
       countryCode: "TJ",
       name: "Tajikistan",
       callingCode: "+992",
-      flag: "flags/tj.png",
+      localFlag: "flags/tj.png",
+      networkFlag: "https://flagcdn.com/216x162/tj.png",
       nameTranslations: {
         "sk": "Tadžikistan",
         "se": "Tažikistan",
@@ -6069,7 +6284,8 @@ class CountryCode {
       countryCode: "TZ",
       name: "Tanzania, United Republic of",
       callingCode: "+255",
-      flag: "flags/tz.png",
+      localFlag: "flags/tz.png",
+      networkFlag: "https://flagcdn.com/216x162/tz.png",
       nameTranslations: {
         "sk": "Tanzánia",
         "se": "Tanzánia",
@@ -6096,7 +6312,8 @@ class CountryCode {
       countryCode: "TH",
       name: "Thailand",
       callingCode: "+66",
-      flag: "flags/th.png",
+      localFlag: "flags/th.png",
+      networkFlag: "https://flagcdn.com/216x162/th.png",
       nameTranslations: {
         "sk": "Thajsko",
         "se": "Thaieana",
@@ -6123,7 +6340,8 @@ class CountryCode {
       countryCode: "TL",
       name: "Timor-Leste",
       callingCode: "+670",
-      flag: "flags/tl.png",
+      localFlag: "flags/tl.png",
+      networkFlag: "https://flagcdn.com/216x162/tl.png",
       nameTranslations: {
         "sk": "Východný Timor",
         "se": "Nuorta-Timor",
@@ -6150,7 +6368,8 @@ class CountryCode {
       countryCode: "TG",
       name: "Togo",
       callingCode: "+228",
-      flag: "flags/tg.png",
+      localFlag: "flags/tg.png",
+      networkFlag: "https://flagcdn.com/216x162/tg.png",
       nameTranslations: {
         "sk": "Togo",
         "se": "Togo",
@@ -6177,7 +6396,8 @@ class CountryCode {
       countryCode: "TK",
       name: "Tokelau",
       callingCode: "+690",
-      flag: "flags/tk.png",
+      localFlag: "flags/tk.png",
+      networkFlag: "https://flagcdn.com/216x162/tk.png",
       nameTranslations: {
         "sk": "Tokelau",
         "se": "Tokelau",
@@ -6204,7 +6424,8 @@ class CountryCode {
       countryCode: "TO",
       name: "Tonga",
       callingCode: "+676",
-      flag: "flags/to.png",
+      localFlag: "flags/to.png",
+      networkFlag: "https://flagcdn.com/216x162/to.png",
       nameTranslations: {
         "sk": "Tonga",
         "se": "Tonga",
@@ -6231,7 +6452,8 @@ class CountryCode {
       countryCode: "TT",
       name: "Trinidad and Tobago",
       callingCode: "+1868",
-      flag: "flags/tt.png",
+      localFlag: "flags/tt.png",
+      networkFlag: "https://flagcdn.com/216x162/tt.png",
       nameTranslations: {
         "sk": "Trinidad a Tobago",
         "se": "Trinidad ja Tobago",
@@ -6258,7 +6480,8 @@ class CountryCode {
       countryCode: "TN",
       name: "Tunisia",
       callingCode: "+216",
-      flag: "flags/tn.png",
+      localFlag: "flags/tn.png",
+      networkFlag: "https://flagcdn.com/216x162/tn.png",
       nameTranslations: {
         "sk": "Tunisko",
         "se": "Tunisia",
@@ -6285,7 +6508,8 @@ class CountryCode {
       countryCode: "TR",
       name: "Turkey",
       callingCode: "+90",
-      flag: "flags/tr.png",
+      localFlag: "flags/tr.png",
+      networkFlag: "https://flagcdn.com/216x162/tr.png",
       nameTranslations: {
         "sk": "Turecko",
         "se": "Durka",
@@ -6312,7 +6536,8 @@ class CountryCode {
       countryCode: "TM",
       name: "Turkmenistan",
       callingCode: "+993",
-      flag: "flags/tm.png",
+      localFlag: "flags/tm.png",
+      networkFlag: "https://flagcdn.com/216x162/tm.png",
       nameTranslations: {
         "sk": "Turkménsko",
         "se": "Turkmenistan",
@@ -6339,7 +6564,8 @@ class CountryCode {
       countryCode: "TC",
       name: "Turks and Caicos Islands",
       callingCode: "+1649",
-      flag: "flags/tc.png",
+      localFlag: "flags/tc.png",
+      networkFlag: "https://flagcdn.com/216x162/tc.png",
       nameTranslations: {
         "sk": "Turks a Caicos",
         "se": "Turks ja Caicos-sullot",
@@ -6366,7 +6592,8 @@ class CountryCode {
       countryCode: "TV",
       name: "Tuvalu",
       callingCode: "+688",
-      flag: "flags/tv.png",
+      localFlag: "flags/tv.png",
+      networkFlag: "https://flagcdn.com/216x162/tv.png",
       nameTranslations: {
         "sk": "Tuvalu",
         "se": "Tuvalu",
@@ -6393,7 +6620,8 @@ class CountryCode {
       countryCode: "UG",
       name: "Uganda",
       callingCode: "+256",
-      flag: "flags/ug.png",
+      localFlag: "flags/ug.png",
+      networkFlag: "https://flagcdn.com/216x162/ug.png",
       nameTranslations: {
         "sk": "Uganda",
         "se": "Uganda",
@@ -6420,7 +6648,8 @@ class CountryCode {
       countryCode: "UA",
       name: "Ukraine",
       callingCode: "+380",
-      flag: "flags/ua.png",
+      localFlag: "flags/ua.png",
+      networkFlag: "https://flagcdn.com/216x162/ua.png",
       nameTranslations: {
         "sk": "Ukrajina",
         "se": "Ukraina",
@@ -6447,7 +6676,8 @@ class CountryCode {
       countryCode: "AE",
       name: "United Arab Emirates",
       callingCode: "+971",
-      flag: "flags/ae.png",
+      localFlag: "flags/ae.png",
+      networkFlag: "https://flagcdn.com/216x162/ae.png",
       nameTranslations: {
         "sk": "Spojené arabské emiráty",
         "se": "Ovttastuvvan Arábaemiráhtat",
@@ -6474,7 +6704,8 @@ class CountryCode {
       countryCode: "GB",
       name: "United Kingdom of Great Britain and Northern Ireland",
       callingCode: "+44",
-      flag: "flags/gb.png",
+      localFlag: "flags/gb.png",
+      networkFlag: "https://flagcdn.com/216x162/gb.png",
       nameTranslations: {
         "sk": "Spojené kráľovstvo",
         "se": "Stuorra-Británnia",
@@ -6501,7 +6732,8 @@ class CountryCode {
       countryCode: "US",
       name: "United States of America",
       callingCode: "+1",
-      flag: "flags/us.png",
+      localFlag: "flags/us.png",
+      networkFlag: "https://flagcdn.com/216x162/us.png",
       nameTranslations: {
         "sk": "Spojené štáty",
         "se": "Amerihká ovttastuvvan stáhtat",
@@ -6528,7 +6760,8 @@ class CountryCode {
       countryCode: "UY",
       name: "Uruguay",
       callingCode: "+598",
-      flag: "flags/uy.png",
+      localFlag: "flags/uy.png",
+      networkFlag: "https://flagcdn.com/216x162/uy.png",
       nameTranslations: {
         "sk": "Uruguaj",
         "se": "Uruguay",
@@ -6555,7 +6788,8 @@ class CountryCode {
       countryCode: "UZ",
       name: "Uzbekistan",
       callingCode: "+998",
-      flag: "flags/uz.png",
+      localFlag: "flags/uz.png",
+      networkFlag: "https://flagcdn.com/216x162/uz.png",
       nameTranslations: {
         "sk": "Uzbekistan",
         "se": "Usbekistan",
@@ -6582,7 +6816,8 @@ class CountryCode {
       countryCode: "VU",
       name: "Vanuatu",
       callingCode: "+678",
-      flag: "flags/vu.png",
+      localFlag: "flags/vu.png",
+      networkFlag: "https://flagcdn.com/216x162/vu.png",
       nameTranslations: {
         "sk": "Vanuatu",
         "se": "Vanuatu",
@@ -6609,7 +6844,8 @@ class CountryCode {
       countryCode: "VE",
       name: "Venezuela (Bolivarian Republic of)",
       callingCode: "+58",
-      flag: "flags/ve.png",
+      localFlag: "flags/ve.png",
+      networkFlag: "https://flagcdn.com/216x162/ve.png",
       nameTranslations: {
         "sk": "Venezuela",
         "se": "Venezuela",
@@ -6636,7 +6872,8 @@ class CountryCode {
       countryCode: "VN",
       name: "Vietnam",
       callingCode: "+84",
-      flag: "flags/vn.png",
+      localFlag: "flags/vn.png",
+      networkFlag: "https://flagcdn.com/216x162/vn.png",
       nameTranslations: {
         "sk": "Vietnam",
         "se": "Vietnam",
@@ -6663,7 +6900,8 @@ class CountryCode {
       countryCode: "VG",
       name: "Virgin Islands (British)",
       callingCode: "+1284",
-      flag: "flags/vg.png",
+      localFlag: "flags/vg.png",
+      networkFlag: "https://flagcdn.com/216x162/vg.png",
       nameTranslations: {
         "sk": "Britské Panenské ostrovy",
         "se": "Brittania Virgin-sullot",
@@ -6690,7 +6928,8 @@ class CountryCode {
       countryCode: "VI",
       name: "Virgin Islands (U.S.)",
       callingCode: "+1340",
-      flag: "flags/vi.png",
+      localFlag: "flags/vi.png",
+      networkFlag: "https://flagcdn.com/216x162/vi.png",
       nameTranslations: {
         "sk": "Americké Panenské ostrovy",
         "se": "AOS Virgin-sullot",
@@ -6717,7 +6956,8 @@ class CountryCode {
       countryCode: "WF",
       name: "Wallis and Futuna",
       callingCode: "+681",
-      flag: "flags/wf.png",
+      localFlag: "flags/wf.png",
+      networkFlag: "https://flagcdn.com/216x162/wf.png",
       nameTranslations: {
         "sk": "Wallis a Futuna",
         "se": "Wallis ja Futuna",
@@ -6744,7 +6984,8 @@ class CountryCode {
       countryCode: "YE",
       name: "Yemen",
       callingCode: "+967",
-      flag: "flags/ye.png",
+      localFlag: "flags/ye.png",
+      networkFlag: "https://flagcdn.com/216x162/ye.png",
       nameTranslations: {
         "sk": "Jemen",
         "se": "Jemen",
@@ -6771,7 +7012,8 @@ class CountryCode {
       countryCode: "ZM",
       name: "Zambia",
       callingCode: "+260",
-      flag: "flags/zm.png",
+      localFlag: "flags/zm.png",
+      networkFlag: "https://flagcdn.com/216x162/zm.png",
       nameTranslations: {
         "sk": "Zambia",
         "se": "Zambia",
@@ -6798,7 +7040,8 @@ class CountryCode {
       countryCode: "ZW",
       name: "Zimbabwe",
       callingCode: "+263",
-      flag: "flags/zw.png",
+      localFlag: "flags/zw.png",
+      networkFlag: "https://flagcdn.com/216x162/zw.png",
       nameTranslations: {
         "sk": "Zimbabwe",
         "se": "Zimbabwe",

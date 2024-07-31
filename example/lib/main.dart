@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             SizedBox(height: 12),
             Image.asset(
-              _selectedCountry?.flag ?? placeholderImgPath,
+              _selectedCountry?.localFlag ?? placeholderImgPath,
               package: countryCodePackageName,
             )
           ],

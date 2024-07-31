@@ -1,5 +1,9 @@
 # CHANGES
 
+## [v0.1.1]
+
+*add network flag using flagcdn.com
+
 ## [v0.1.0]
 
 *add exclude feature

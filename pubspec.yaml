@@ -1,6 +1,6 @@
 name: country_code_helper
 description: Flexible Country picker for getting Country code and Calling code.
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/mustafa-707/flutter_country_code
 issue_tracker: https://github.com/mustafa-707/flutter_country_code/issues
 

@@ -243,7 +243,7 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                         child: Row(
                           children: <Widget>[
                             Image.asset(
-                              _filteredList[index].flag,
+                              _filteredList[index].localFlag,
                               package: countryCodePackageName,
                               width: widget.flagIconSize,
                             ),
