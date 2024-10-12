@@ -1,76 +1,34 @@
-import 'dart:convert';
-
-import 'package:flutter_libphonenumber/flutter_libphonenumber.dart'
-    as FlutterLibPhoneNumber;
+import 'package:country_code_helper/src/models/parsed_number.dart';
+import 'package:flutter_libphonenumber/flutter_libphonenumber.dart' as FlutterLibPhoneNumber;
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 
-ParsedNumber parsedNumberFromJson(String str) =>
-    ParsedNumber.fromJson(json.decode(str));
-
-class ParsedNumber {
-  final String countryCode;
-  final String e164;
-  final String national;
-  final String type;
-  final String international;
-  final String nationalNumber;
-  final String regionCode;
-
-  ParsedNumber({
-    required this.countryCode,
-    required this.e164,
-    required this.national,
-    required this.type,
-    required this.international,
-    required this.nationalNumber,
-    required this.regionCode,
-  });
-
-  factory ParsedNumber.fromJson(Map<String, dynamic> json) => ParsedNumber(
-        countryCode: json["country_code"],
-        e164: json["e164"],
-        national: json["national"],
-        type: json["type"],
-        international: json["international"],
-        nationalNumber: json["national_number"],
-        regionCode: json["region_code"],
-      );
-
-  Map<String, dynamic> toJson() => {
-        "country_code": countryCode,
-        "e164": e164,
-        "national": national,
-        "type": type,
-        "international": international,
-        "national_number": nationalNumber,
-        "region_code": regionCode,
-      };
-}
-
 class PhoneNumberTools {
-  Future<ParsedNumber> parse(
-    String phoneNumberString, {
-    String? regionCode,
-  }) async {
-    final parsedNumber = await FlutterLibPhoneNumber.parse(
-      phoneNumberString,
-      region: regionCode,
-    );
-
-    return ParsedNumber.fromJson(parsedNumber);
+  /// Parses the given [phoneNumberString] into a [ParsedNumber] object.
+  /// Optionally, pass the [regionCode] to assist parsing.
+  Future<ParsedNumber> parse(String phoneNumberString, {String? regionCode}) async {
+    try {
+      final parsedNumber = await FlutterLibPhoneNumber.parse(phoneNumberString, region: regionCode);
+      return ParsedNumber.fromJson(parsedNumber);
+    } catch (e) {
+      throw Exception('Failed to parse phone number: $e');
+    }
   }
 
-  bool validate(
-    String phoneNumberString, {
-    String? regionCode,
-  }) {
-    final parsedNumber = PhoneNumber.parse(
-      phoneNumberString,
-      callerCountry: IsoCode.values.firstWhere(
-        (e) => e.name.toLowerCase() == regionCode?.toLowerCase(),
-        orElse: null,
-      ),
-    );
-    return parsedNumber.isValid();
+  /// Validates the given [phoneNumberString] against the optional [regionCode].
+  /// Returns `true` if valid, `false` otherwise.
+  bool validate(String phoneNumberString, {String? regionCode}) {
+    try {
+      final parsedNumber = PhoneNumber.parse(
+        phoneNumberString,
+        callerCountry: regionCode != null
+            ? IsoCode.values.firstWhere(
+                (e) => e.name.toLowerCase() == regionCode.toLowerCase(),
+              )
+            : null,
+      );
+      return parsedNumber.isValid();
+    } catch (e) {
+      return false; // Return false on failure to parse or invalid format
+    }
   }
 }

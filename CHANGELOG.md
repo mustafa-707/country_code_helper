@@ -1,5 +1,11 @@
 # CHANGES
 
+## [v0.1.2]
+
+*remove network flags
+*add Kurdistan as a country
+*optimize code
+
 ## [v0.1.1]
 
 *add network flag using flagcdn.com
