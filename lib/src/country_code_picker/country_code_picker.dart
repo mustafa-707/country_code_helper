@@ -3,8 +3,7 @@ library countrycodepicker;
 import 'package:dartarabic/dartarabic.dart';
 import 'package:flutter/material.dart';
 import 'package:country_code_helper/src/country_code_picker/country_code_helper.dart';
-
-import 'country.dart';
+import 'package:country_code_helper/src/models/country.dart';
 
 // Default styles and parameters
 const TextStyle _defaultItemTextStyle = TextStyle(fontSize: 16);

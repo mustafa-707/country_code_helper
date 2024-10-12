@@ -1,7 +1,6 @@
 import 'package:country_code_helper/src/country_code_picker/counties.dart';
+import 'package:country_code_helper/src/models/country.dart';
 import 'package:sim_card_code/sim_card_code.dart';
-
-import 'country.dart';
 
 class CountryCode {
   static Map<String, Country>? _sortedCountries;

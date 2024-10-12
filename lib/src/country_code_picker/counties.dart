@@ -1,33 +1,139 @@
-import 'package:country_code_helper/country_code_helper.dart';
+import 'package:country_code_helper/src/models/country.dart';
 
-  // Predefined country lists
-   const List<String> arabCountries = [
-    "PS", "JO", "SA", "DZ", "EG", "SY", "IQ", "AE", "KW", "LB", "OM", "YE", 
-    "QA", "MA", "SD", "TN", "BH", "LY", "MR", "SO", "DJ", "KM"
-  ];
-  
-   const List<String> westernEuropeanCountries = [
-    "AD", "BE", "DK", "FI", "FR", "DE", "GR", "IS", "IE", "IT", "LU", "MT", 
-    "MC", "NL", "NO", "PT", "SM", "ES", "SE", "CH", "GB"
-  ];
+// Predefined country lists
+const List<String> arabCountries = [
+  "PS",
+  "JO",
+  "SA",
+  "DZ",
+  "EG",
+  "SY",
+  "IQ",
+  "AE",
+  "KW",
+  "LB",
+  "OM",
+  "YE",
+  "QA",
+  "MA",
+  "SD",
+  "TN",
+  "BH",
+  "LY",
+  "MR",
+  "SO",
+  "DJ",
+  "KM"
+];
 
-   const List<String> easternEuropeanCountries = [
-    "AL", "AM", "AT", "AZ", "BY", "BA", "BG", "HR", "CY", "CZ", "EE", "GE", 
-    "HU", "KZ", "LV", "LT", "MD", "ME", "MK", "PL", "RO", "RU", "RS", "SK", 
-    "SI", "UA"
-  ];
+const List<String> westernEuropeanCountries = [
+  "AD",
+  "BE",
+  "DK",
+  "FI",
+  "FR",
+  "DE",
+  "GR",
+  "IS",
+  "IE",
+  "IT",
+  "LU",
+  "MT",
+  "MC",
+  "NL",
+  "NO",
+  "PT",
+  "SM",
+  "ES",
+  "SE",
+  "CH",
+  "GB"
+];
 
-   const List<String> stanCountries = [
-    "AF", "KZ", "KG", "PK", "TJ", "TM", "UZ"
-  ];
+const List<String> easternEuropeanCountries = [
+  "AL",
+  "AM",
+  "AT",
+  "AZ",
+  "BY",
+  "BA",
+  "BG",
+  "HR",
+  "CY",
+  "CZ",
+  "EE",
+  "GE",
+  "HU",
+  "KZ",
+  "LV",
+  "LT",
+  "MD",
+  "ME",
+  "MK",
+  "PL",
+  "RO",
+  "RU",
+  "RS",
+  "SK",
+  "SI",
+  "UA"
+];
 
-   const List<String> africanCountries = [
-    "AO", "BJ", "BW", "BF", "BI", "CM", "CV", "CF", "TD", "KM", "CG", "CD", 
-    "DJ", "GQ", "ER", "SZ", "ET", "GA", "GM", "GH", "GN", "GW", "KE", "LS", 
-    "LR", "MG", "MW", "ML", "MR", "MU", "YT", "MZ", "NA", "NE", "NG", "RE", 
-    "RW", "SH", "ST", "SN", "SC", "SL", "SO", "ZA", "SS", "SD", "TZ", "TG", 
-    "UG", "ZM", "ZW"
-  ];
+const List<String> stanCountries = ["AF", "KZ", "KG", "PK", "TJ", "TM", "UZ"];
+
+const List<String> africanCountries = [
+  "AO",
+  "BJ",
+  "BW",
+  "BF",
+  "BI",
+  "CM",
+  "CV",
+  "CF",
+  "TD",
+  "KM",
+  "CG",
+  "CD",
+  "DJ",
+  "GQ",
+  "ER",
+  "SZ",
+  "ET",
+  "GA",
+  "GM",
+  "GH",
+  "GN",
+  "GW",
+  "KE",
+  "LS",
+  "LR",
+  "MG",
+  "MW",
+  "ML",
+  "MR",
+  "MU",
+  "YT",
+  "MZ",
+  "NA",
+  "NE",
+  "NG",
+  "RE",
+  "RW",
+  "SH",
+  "ST",
+  "SN",
+  "SC",
+  "SL",
+  "SO",
+  "ZA",
+  "SS",
+  "SD",
+  "TZ",
+  "TG",
+  "UG",
+  "ZM",
+  "ZW"
+];
 
 const Map<String, Country> countriesData = {
   "AF": Country(
