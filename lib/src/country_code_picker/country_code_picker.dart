@@ -93,10 +93,8 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
               final normalizedSearch = _normalize(text, widget.locale);
 
               return countryName != null &&
-                      _normalize(countryName, widget.locale)
-                          .contains(normalizedSearch) ||
-                  _normalize(element.name, widget.locale)
-                      .contains(normalizedSearch) ||
+                      _normalize(countryName, widget.locale).contains(normalizedSearch) ||
+                  _normalize(element.name, widget.locale).contains(normalizedSearch) ||
                   element.callingCode.contains(normalizedSearch) ||
                   element.countryCode.startsWith(normalizedSearch);
             })
@@ -226,8 +224,7 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                   padding: EdgeInsets.only(top: 16),
                   controller: _scrollController,
                   itemCount: _filteredList.length,
-                  separatorBuilder: (_, index) =>
-                      widget.showSeparator ? Divider() : Container(),
+                  separatorBuilder: (_, index) => widget.showSeparator ? Divider() : Container(),
                   itemBuilder: (_, index) {
                     return InkWell(
                       onTap: () {

@@ -12,13 +12,10 @@ dependencies:
   flutter:
     sdk: flutter
   sim_card_code: ^0.0.2
-  phone_numbers_parser: ^8.3.0
-  flutter_libphonenumber: ^2.2.3
+  phone_numbers_parser: ^9.0.1
+  flutter_libphonenumber: ^2.5.0
   dartarabic: ^0.1.2
 
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
 
 flutter:
   uses-material-design: true

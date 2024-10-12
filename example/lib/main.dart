@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
           'SA',
           'JO',
         ],
-        prefered: [
+        preferred: [
           'JO',
           'SA',
         ],
