@@ -52,7 +52,8 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
   // Normalize text based on locale
   String _normalize(String text, String locale) {
     if (locale == 'ar') {
-      return DartArabic.normalizeLetters(DartArabic.normalizeAlef(text)).toLowerCase();
+      return DartArabic.normalizeLetters(DartArabic.normalizeAlef(text))
+          .toLowerCase();
     } else {
       return text.toLowerCase();
     }
@@ -70,8 +71,10 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
         _filteredList = _list.where((country) {
           final countryName = country.nameTranslations[widget.locale];
           return (countryName != null &&
-                  _normalize(countryName, widget.locale).contains(normalizedSearch)) ||
-              _normalize(country.name, widget.locale).contains(normalizedSearch) ||
+                  _normalize(countryName, widget.locale)
+                      .contains(normalizedSearch)) ||
+              _normalize(country.name, widget.locale)
+                  .contains(normalizedSearch) ||
               country.callingCode.contains(normalizedSearch) ||
               country.countryCode.startsWith(normalizedSearch);
         }).toList();
@@ -127,7 +130,8 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                       : null,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: const BorderSide(width: 2, color: Color(0xFFCBD0D6)),
+                    borderSide:
+                        const BorderSide(width: 2, color: Color(0xFFCBD0D6)),
                   ),
                 ),
             onChanged: _onSearch,
@@ -150,8 +154,9 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                         country.localFlag,
                         package: countryCodePackageName,
                         width: widget.flagIconSize,
-                        errorBuilder: (_, __, ___) =>
-                            Image.asset(placeholderImgPath, width: widget.flagIconSize),
+                        errorBuilder: (_, __, ___) => Image.asset(
+                            placeholderImgPath,
+                            width: widget.flagIconSize),
                       ),
                       title: Text(
                         country.nameTranslations[widget.locale] ?? country.name,
@@ -159,7 +164,8 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                       ),
                       trailing: Text(
                         widget.listWithCodes ? '+${country.callingCode}' : '',
-                        style: widget.itemTextStyle.copyWith(color: const Color(0xFFCBD0D6)),
+                        style: widget.itemTextStyle
+                            .copyWith(color: const Color(0xFFCBD0D6)),
                       ),
                     );
                   },

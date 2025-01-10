@@ -12,7 +12,8 @@ class CountryCode {
     List<String>? exclude,
   }) async {
     try {
-      _sortedCountries = _sortedCountries ?? countries(preferred: preferred, exclude: exclude);
+      _sortedCountries =
+          _sortedCountries ?? countries(preferred: preferred, exclude: exclude);
 
       if (_sortedCountries == null) throw Exception('Failed to get countries');
 
@@ -20,7 +21,8 @@ class CountryCode {
 
       // Return the first country if no SIM card country code is found
       return _sortedCountries!.values.firstWhere(
-        (country) => country.countryCode.toLowerCase() == countryCode?.toLowerCase(),
+        (country) =>
+            country.countryCode.toLowerCase() == countryCode?.toLowerCase(),
         orElse: () => _sortedCountries!.values.first,
       );
     } catch (e) {
@@ -37,7 +39,8 @@ class CountryCode {
       return _sortedCountries!;
     }
 
-    final sortedEntries = _getSortedEntries(preferred: preferred, exclude: exclude);
+    final sortedEntries =
+        _getSortedEntries(preferred: preferred, exclude: exclude);
     _sortedCountries = Map.fromEntries(sortedEntries);
 
     return _sortedCountries!;

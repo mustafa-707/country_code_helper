@@ -1,5 +1,9 @@
 # CHANGES
 
+## [v0.2.0]
+
+*Update dependencies (packages)
+
 ## [v0.1.2]
 
 *remove network flags

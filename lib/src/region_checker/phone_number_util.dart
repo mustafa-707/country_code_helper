@@ -1,13 +1,16 @@
 import 'package:country_code_helper/src/models/parsed_number.dart';
-import 'package:flutter_libphonenumber/flutter_libphonenumber.dart' as FlutterLibPhoneNumber;
+import 'package:flutter_libphonenumber/flutter_libphonenumber.dart'
+    as FlutterLibPhoneNumber;
 import 'package:phone_numbers_parser/phone_numbers_parser.dart';
 
 class PhoneNumberTools {
   /// Parses the given [phoneNumberString] into a [ParsedNumber] object.
   /// Optionally, pass the [regionCode] to assist parsing.
-  Future<ParsedNumber> parse(String phoneNumberString, {String? regionCode}) async {
+  Future<ParsedNumber> parse(String phoneNumberString,
+      {String? regionCode}) async {
     try {
-      final parsedNumber = await FlutterLibPhoneNumber.parse(phoneNumberString, region: regionCode);
+      final parsedNumber = await FlutterLibPhoneNumber.parse(phoneNumberString,
+          region: regionCode);
       return ParsedNumber.fromJson(parsedNumber);
     } catch (e) {
       throw Exception('Failed to parse phone number: $e');

@@ -1,7 +1,8 @@
 // Utility to parse JSON string to ParsedNumber object
 import 'dart:convert';
 
-ParsedNumber parsedNumberFromJson(String str) => ParsedNumber.fromJson(json.decode(str));
+ParsedNumber parsedNumberFromJson(String str) =>
+    ParsedNumber.fromJson(json.decode(str));
 
 class ParsedNumber {
   final String countryCode;
