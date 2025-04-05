@@ -1,8 +1,8 @@
 name: country_code_helper
 description: Flexible Country picker for getting Country code and Calling code.
-version: 0.2.0
-repository: https://github.com/mustafa-707/flutter_country_code
-issue_tracker: https://github.com/mustafa-707/flutter_country_code/issues
+version: 0.2.1
+repository: https://github.com/mustafa-707/country_code_helper
+issue_tracker: https://github.com/mustafa-707/country_code_helper/issues
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -11,9 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  sim_card_code: ^0.0.2
+  sim_card_code: ^0.0.3
   phone_numbers_parser: ^9.0.3
-  flutter_libphonenumber: ^2.5.0
+  flutter_libphonenumber: ^2.5.1
   dartarabic: ^0.3.1
 
 flutter:

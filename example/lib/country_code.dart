@@ -45,7 +45,6 @@ class _CountryCodeWidgetState extends State<CountryCodeWidget> {
             Expanded(
               child: CountryPickerWidget(
                 onSelected: (country) => Navigator.of(context).pop(country),
-                searchHintText: 'search',
                 locale: Localizations.localeOf(context).languageCode,
               ),
             ),

@@ -5,18 +5,18 @@ packages:
     dependency: transitive
     description:
       name: characters
-      sha256: "04a925763edad70e8443c99234dc3328f442e811f1d8fd1a72f1c8ad0f69a605"
+      sha256: f71061c654a3380576a52b451dd5532377954cf9dbd272a78fc8479606670803
       url: "https://pub.dev"
     source: hosted
-    version: "1.3.0"
+    version: "1.4.0"
   collection:
     dependency: transitive
     description:
       name: collection
-      sha256: a1ace0a119f20aabc852d165077c036cd864315bd99b7eaa10a60100341941bf
+      sha256: "2f5709ae4d3d59dd8f7cd309b4e023046b57d8a6c82130785d2b0e5868084e76"
       url: "https://pub.dev"
     source: hosted
-    version: "1.19.0"
+    version: "1.19.1"
   dartarabic:
     dependency: "direct main"
     description:
@@ -34,18 +34,18 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_libphonenumber
-      sha256: "1c846c6828e296b2180be39fa7893abed858260265b988c09166d09e75d30266"
+      sha256: fd92be0562cf88b62110452e649f5e6167bf405ac1a7806e31996a05303280ee
       url: "https://pub.dev"
     source: hosted
-    version: "2.5.0"
+    version: "2.5.1"
   flutter_libphonenumber_android:
     dependency: transitive
     description:
       name: flutter_libphonenumber_android
-      sha256: "520ce2519ee550b618298cc68781a4bb7adfc131bf6790ae2941ed0034e5943a"
+      sha256: "050883c2d168c3567ea9be4efb5eaf5d59e357c427e98da862beb05c3a014c55"
       url: "https://pub.dev"
     source: hosted
-    version: "1.4.0"
+    version: "1.4.1"
   flutter_libphonenumber_ios:
     dependency: transitive
     description:
@@ -87,10 +87,10 @@ packages:
     dependency: transitive
     description:
       name: meta
-      sha256: bdb68674043280c3428e9ec998512fb681678676b3c54e773629ffe74419f8c7
+      sha256: e3641ec5d63ebf0d9b41bd43201a66e3fc79a65db5f61fc181f04cd27aab950c
       url: "https://pub.dev"
     source: hosted
-    version: "1.15.0"
+    version: "1.16.0"
   phone_numbers_parser:
     dependency: "direct main"
     description:
@@ -111,10 +111,10 @@ packages:
     dependency: "direct main"
     description:
       name: sim_card_code
-      sha256: "9bf257b085a1bdd0033d29f3fb6edfca59c299927b44fa21f9351825f219daad"
+      sha256: "969d99d62c3bdc68518341b1c67b4096ef84a31caa281a37c4419f14c5c06634"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.2"
+    version: "0.0.3"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -145,5 +145,5 @@ packages:
     source: hosted
     version: "1.1.0"
 sdks:
-  dart: ">=3.4.0 <4.0.0"
+  dart: ">=3.7.0-0 <4.0.0"
   flutter: ">=3.3.0"

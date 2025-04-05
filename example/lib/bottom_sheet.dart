@@ -40,7 +40,7 @@ class _BottomSheet extends StatelessWidget {
                     height: 3,
                     width: 32.60,
                     decoration: BoxDecoration(
-                      color: Theme.of(context).colorScheme.background,
+                      color: Theme.of(context).colorScheme.surface,
                       borderRadius: BorderRadius.circular(6),
                     ),
                   ),
