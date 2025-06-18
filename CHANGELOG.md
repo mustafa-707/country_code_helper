@@ -1,5 +1,10 @@
 # CHANGES
 
+## [v0.2.2]
+
+\*Update dependencies (packages)
+\*Update Syrian Flag
+
 ## [v0.2.1]
 
 \*Update dependencies (packages)

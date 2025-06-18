@@ -17,7 +17,7 @@ class CountryCode {
 
       if (_sortedCountries == null) throw Exception('Failed to get countries');
 
-      final countryCode = await SimCardInfo.simCountryCode;
+      final countryCode = await SimCardManager.simCountryCode;
 
       // Return the first country if no SIM card country code is found
       return _sortedCountries!.values.firstWhere(
