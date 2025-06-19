@@ -1,5 +1,9 @@
 # CHANGES
 
+## [v0.2.3]
+
+\*Update dependencies (packages)
+
 ## [v0.2.2]
 
 \*Update dependencies (packages)

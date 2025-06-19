@@ -111,10 +111,10 @@ packages:
     dependency: "direct main"
     description:
       name: sim_card_code
-      sha256: "27745c510887deb0a237c53bfd349d0835e9b2516c2edd2cce5849ebebde3ae0"
+      sha256: "15908f8593910880ec7eaa557a1fd32d88d60f673101390189f413827fb5dd7a"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.4"
+    version: "0.0.5"
   sky_engine:
     dependency: transitive
     description: flutter
