@@ -1,49 +1,87 @@
 # CHANGES
 
-## [v0.2.4]
+## [0.3.0]
 
-\*Update dependencies (packages)
+### Highlights
 
-## [v0.2.3]
+- **Pure Dart** — dropped `flutter_libphonenumber` and removed the hard dependency on `sim_card_code`. No native code, no Android KGP, no iOS SwiftPM coupling. Zero plugin warnings for consumers.
+- **Built-in `showCountryPickerSheet`** modal — no more wrapping `CountryPickerWidget` in your own bottom sheet.
+- **`CountryCodePrefix`** widget for phone-input fields (flag + dial code + divider).
+- **Modernized picker UI** — Material 3 theming, drag handle, search with prefix icon + inline clear, selection state, empty state, RTL-friendly paddings, divider between priority and full list.
 
-\*Update dependencies (packages)
+### API
 
-## [v0.2.2]
+- `PhoneNumberTools.parse` is now **synchronous** (was async). Reimplemented on top of `phone_numbers_parser`.
+- `PhoneNumberTools.validateMobile` / `validateFixedLine` added.
+- `PhoneNumberTools` methods are now `static`.
+- `CountryCode.initCountry` accepts an optional `regionResolver` callback so apps can plug in SIM-card detection (e.g. via `sim_card_code`) without forcing every consumer to pull native deps. Default detection is `PlatformDispatcher.locales`. Now returns `Country?` (was always non-null).
+- New `CountryCode.detectCountry({fallback})` and `CountryCode.detectRegionCode()`.
+- New `CountryCode.getCountryByCallingCode(...)`.
+- `Country.localizedName(locale)`, `copyWith`, value-based `==` / `hashCode`, `toJson`.
+- `CountryPickerConfig.itemBuilder` signature changed to `(context, country, selected)`.
 
-\*Update dependencies (packages)
-\*Update Syrian Flag
+### Performance
 
-## [v0.2.1]
+- Pre-normalized search keys per locale (one `String.contains` per row).
+- Debounced search (80 ms).
+- Fixed-extent `ListView.builder` with `itemExtent` for O(1) scroll-to-index.
+- `RepaintBoundary` around tiles + keyed.
+- `cacheWidth` + `FilterQuality.medium` on flag images.
 
-\*Update dependencies (packages)
-\*Enhancement on ui
+### Fixes
 
-## [v0.2.0]
+- Priority codes are ordered exactly as provided.
+- `initCountry` no longer silently returns the first country on a missed lookup.
 
-\*Update dependencies (packages)
+### Internal
 
-## [v0.1.2]
+- Removed `flutter_hooks` / `modal_bottom_sheet` from example.
+- Trimmed example app and modernized Android setup (Gradle 8.14, AGP 8.13.2, Kotlin 2.2.20 via built-in Kotlin override).
 
-*remove network flags
-*add Kurdistan as a country
-\*optimize code
+## [0.2.4]
 
-## [v0.1.1]
+- Update dependencies (packages)
 
-\*add network flag using flagcdn.com
+## [0.2.3]
 
-## [v0.1.0]
+- Update dependencies (packages)
 
-\*add exclude feature
+## [0.2.2]
 
-## [v0.0.3]
+- Update dependencies (packages)
+- Update Syrian Flag
 
-\*correct package repo url
+## [0.2.1]
 
-## [v0.0.2]
+- Update dependencies (packages)
+- UI enhancements
 
-\*Remove Logs
+## [0.2.0]
 
-## [v0.0.1]
+- Update dependencies (packages)
 
-\*Release the package
+## [0.1.2]
+
+- Remove network flags
+- Add Kurdistan as a country
+- Optimize code
+
+## [0.1.1]
+
+- Add network flag using flagcdn.com
+
+## [0.1.0]
+
+- Add exclude feature
+
+## [0.0.3]
+
+- Correct package repo url
+
+## [0.0.2]
+
+- Remove logs
+
+## [0.0.1]
+
+- Release the package
